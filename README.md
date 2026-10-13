@@ -11,6 +11,9 @@ A BepInEx mod for **You Suck at Parking**:
   - *Hammer Time*: narrow lanes between crash borders, with swinging hammers, boxing gloves and rotating walls.
   - *Sky Ramps*: ramps up to narrow roads high above the sea, with no fences and gloves that punch you off.
   - *Hidden Alleys*: a forest town full of dead-end alleys. Only three hide a parking spot.
+  - **130 arenas** (*Tiny Overpass*, *Chaotic Overpass*, *Crazy Alley*, *Dizzy Yard*, ...): small multi-level arenas built for chaos. 8 to 10 parking spots are packed close together on plazas stacked up to three levels high, with ramps, bridges and lots of jumps over the sea (hit the jump pad at full speed!). Some spots hide under the upper decks or behind trees.
+
+  In a private lobby, every map that all players have (TheTrueMK's maps, or levels the host shared) joins the map vote: one or two of the vote cards are custom maps.
 - **Garage overview** (C in the garage): every car at once, with NEW tags for cars you just got.
 - **Mod cars**: 55 fun looks for your car (a dino on rollerblades, a rubber duck in a bathtub, a haunted coffin, Santa's sleigh, ...) in themes: Classic, Halloween, Christmas, Easter, Summer, Food, Animals, Space, Monsters and Sports. You start with the dino. **Every multiplayer match you finish unlocks a new one at random.** Every car can drop all year, but a seasonal theme's cars are 4x more likely in their season (Halloween 1 Oct - 7 Nov, Christmas 1 Dec - 6 Jan, Easter 15 Mar - 30 Apr, Summer Jun - Aug). Pick yours in the garage under MOD CARS. Other players with the mod see your mod car, and players without it see your normal car. New themes arrive through this repository without a mod update.
 
