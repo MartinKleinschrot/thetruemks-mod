@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "theme": "Space",
+  "cars": [
+   {
+    "id": "rocket",
+    "name": "Retro Rocket",
+    "nodes": [
+      {"name": "rocket", "at": [0, 1.2, 0]},
+      {"name": "flame", "at": [0, 0, -2.1], "parent": "rocket"}
+    ],
+    "parts": [
+      {"shape": "capsule", "at": [0, 0, 0], "size": [1.4, 1.9, 1.4], "color": "#E8ECF2", "rot": [90, 0, 0], "node": "rocket", "paint": true},
+      {"shape": "capsule", "at": [0, 0, 1.75], "size": [0.9, 0.7, 0.9], "color": "#E0352B", "rot": [90, 0, 0], "node": "rocket"},
+      {"shape": "cylinder", "at": [0, 0, 0.6], "size": [1.42, 0.06, 1.42], "color": "#9AA5B1", "rot": [90, 0, 0], "node": "rocket", "outline": false},
+      {"shape": "sphere", "at": [0, 0.55, 0.8], "size": [0.55, 0.45, 0.55], "color": "#6CF0FF", "node": "rocket"},
+      {"shape": "sphere", "at": [0, 0.56, 0.8], "size": [0.65, 0.5, 0.65], "color": "#9AA5B1", "node": "rocket", "outline": false},
+      {"shape": "cube", "at": [0, 0.85, -1.4], "size": [0.12, 0.9, 0.9], "color": "#E0352B", "node": "rocket"},
+      {"shape": "cube", "at": [-0.7361, -0.425, -1.4], "size": [0.12, 0.9, 0.9], "color": "#E0352B", "rot": [0, 0, 120], "node": "rocket"},
+      {"shape": "cube", "at": [0.7361, -0.425, -1.4], "size": [0.12, 0.9, 0.9], "color": "#E0352B", "rot": [0, 0, 240], "node": "rocket"},
+      {"shape": "sphere", "at": [0, 0, -0.35], "size": [0.7, 0.7, 1.1], "color": "#FFD23F", "node": "flame", "outline": false},
+      {"shape": "sphere", "at": [0, 0, -0.15], "size": [0.4, 0.4, 0.7], "color": "#FFFFFF", "node": "flame", "outline": false}
+    ],
+    "anim": [
+      {"node": "rocket", "pos": [0, 0.15, 0], "freq": 2},
+      {"node": "rocket", "rot": [0, 0, 4], "freq": 1.4},
+      {"node": "flame", "pos": [0, 0, -0.25], "freq": 22},
+      {"node": "flame", "rot": [0, 0, 90], "wave": "spin"}
+    ],
+    "hat": {"node": "rocket", "at": [0, 0.72, 0.1], "scale": 0.45}
+   },
+   {
+    "id": "astronaut",
+    "name": "Astronaut on a Moon Buggy",
+    "nodes": [
+      {"name": "dish", "at": [0.6, 2.5, -1.3]},
+      {"name": "astro", "at": [0, 0.7, -0.2]},
+      {"name": "head", "at": [0, 1.65, 0], "parent": "astro"}
+    ],
+    "parts": [
+      {"shape": "cube", "at": [0, 0.55, 0], "size": [2, 0.25, 3.2], "color": "#C9CED6", "paint": true},
+      {"shape": "cube", "at": [1.1, 0.75, 0], "size": [0.15, 0.3, 3], "color": "#9AA5B1", "mirror": true},
+      {"shape": "wheel", "at": [1.25, 0.3, -1.2], "radius": 0.45, "width": 0.35, "color": "#55555F", "hub": "#FFD23F", "mirror": true},
+      {"shape": "wheel", "at": [1.25, 0.3, 1.2], "radius": 0.45, "width": 0.35, "color": "#55555F", "hub": "#FFD23F", "mirror": true},
+      {"shape": "cylinder", "at": [0.6, 1.6, -1.3], "size": [0.05, 0.9, 0.05], "color": "#9AA5B1"},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [0.6, 0.15, 0.6], "color": "#FFFFFF", "rot": [60, 0, 0], "node": "dish"},
+      {"shape": "sphere", "at": [0, 0.7, 0], "size": [1.1, 1.2, 0.9], "color": "#F2F2F2", "node": "astro"},
+      {"shape": "cube", "at": [0, 0.7, -0.5], "size": [0.8, 0.9, 0.35], "color": "#C9CED6", "node": "astro"},
+      {"shape": "cube", "at": [0, 0.85, 0.42], "size": [0.35, 0.25, 0.08], "color": "#E0352B", "node": "astro", "outline": false},
+      {"shape": "capsule", "at": [0.6, 0.85, 0.3], "size": [0.32, 0.35, 0.32], "color": "#F2F2F2", "rot": [70, 0, -10], "node": "astro", "mirror": true},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [0.95, 0.95, 0.95], "color": "#F2F2F2", "node": "head"},
+      {"shape": "sphere", "at": [0, 0, 0.3], "size": [0.7, 0.55, 0.45], "color": "#2B3A55", "node": "head"},
+      {"shape": "sphere", "at": [0.15, 0.12, 0.5], "size": [0.12, 0.08, 0.05], "color": "#FFFFFF", "node": "head", "outline": false}
+    ],
+    "anim": [
+      {"node": "astro", "pos": [0, 0.06, 0], "freq": 8, "when": "moving"},
+      {"node": "head", "rot": [0, 15, 0], "freq": 0.7},
+      {"node": "dish", "rot": [0, 60, 0], "wave": "spin"}
+    ],
+    "hat": {"node": "head", "at": [0, 0.5, 0], "scale": 0.45}
+   },
+   {
+    "id": "satellite",
+    "name": "Satellite",
+    "nodes": [
+      {"name": "sat", "at": [0, 1.3, 0]},
+      {"name": "dish", "at": [0, 0.75, 0.3], "parent": "sat"}
+    ],
+    "parts": [
+      {"shape": "cube", "at": [0, 0, 0], "size": [1.3, 1.3, 1.6], "color": "#E8B43A", "node": "sat", "paint": true},
+      {"shape": "cube", "at": [0, 0, 0.82], "size": [1.1, 1.1, 0.05], "color": "#C98E45", "node": "sat", "outline": false},
+      {"shape": "cylinder", "at": [1.15, 0, 0], "size": [0.08, 0.35, 0.08], "color": "#9AA5B1", "rot": [0, 0, 90], "node": "sat", "mirror": true},
+      {"shape": "cube", "at": [1.95, 0, 0], "size": [0.85, 0.05, 1.4], "color": "#2B4C8C", "node": "sat", "mirror": true},
+      {"shape": "cube", "at": [1.95, 0.03, 0], "size": [0.86, 0.02, 0.04], "color": "#9AA5B1", "node": "sat", "outline": false, "mirror": true},
+      {"shape": "cube", "at": [2.85, 0, 0], "size": [0.85, 0.05, 1.4], "color": "#2B4C8C", "node": "sat", "mirror": true},
+      {"shape": "cube", "at": [2.85, 0.03, 0], "size": [0.86, 0.02, 0.04], "color": "#9AA5B1", "node": "sat", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0, 0.35, 0], "size": [1, 0.2, 1], "color": "#FFFFFF", "rot": [-30, 0, 0], "node": "dish"},
+      {"shape": "cylinder", "at": [0, 0.15, 0], "size": [0.05, 0.2, 0.05], "color": "#9AA5B1", "node": "dish"},
+      {"shape": "sphere", "at": [0, 0.75, 0.15], "size": [0.12, 0.12, 0.12], "color": "#E0352B", "node": "dish"},
+      {"shape": "sphere", "at": [0.3, 0.1, 0.84], "size": [0.22, 0.22, 0.22], "color": "#FFFFFF", "node": "sat", "mirror": true},
+      {"shape": "sphere", "at": [0.32, 0.11, 0.93], "size": [0.1, 0.1, 0.1], "color": "#141419", "node": "sat", "outline": false, "mirror": true}
+    ],
+    "anim": [
+      {"node": "sat", "pos": [0, 0.15, 0], "freq": 1.5},
+      {"node": "sat", "rot": [0, 0, 6], "freq": 1.1},
+      {"node": "dish", "rot": [0, 45, 0], "wave": "spin"}
+    ],
+    "hat": {"node": "sat", "at": [0, 0.68, -0.5], "scale": 0.45}
+   },
+   {
+    "id": "planet",
+    "name": "Ringed Planet",
+    "nodes": [
+      {"name": "planet", "at": [0, 1.45, 0]},
+      {"name": "ring", "at": [0, 0, 0], "parent": "planet", "rot": [15, 0, 10]},
+      {"name": "moon", "at": [0, 0.6, 0], "parent": "planet"}
+    ],
+    "parts": [
+      {"shape": "sphere", "at": [0, 0, 0], "size": [2.2, 2.2, 2.2], "color": "#F2A65A", "node": "planet", "paint": true},
+      {"shape": "sphere", "at": [0, -0.5, 0], "size": [1.9952, 0.16, 1.9952], "color": "#D9823F", "node": "planet", "outline": false},
+      {"shape": "sphere", "at": [0, 0.15, 0], "size": [2.2191, 0.16, 2.2191], "color": "#D9823F", "node": "planet", "outline": false},
+      {"shape": "sphere", "at": [0, 0.7, 0], "size": [1.7279, 0.16, 1.7279], "color": "#D9823F", "node": "planet", "outline": false},
+      {"shape": "cylinder", "at": [0, 0, 0], "size": [3.6, 0.03, 3.6], "color": "#E8D5A0", "node": "ring"},
+      {"shape": "cylinder", "at": [0, 0.01, 0], "size": [2.6, 0.035, 2.6], "color": "#F4F4F4", "node": "ring", "outline": false},
+      {"shape": "sphere", "at": [2, 0, 0], "size": [0.45, 0.45, 0.45], "color": "#C9CED6", "node": "moon"},
+      {"shape": "sphere", "at": [0.4, 0.3, 1], "size": [0.28, 0.28, 0.28], "color": "#FFFFFF", "node": "planet", "mirror": true},
+      {"shape": "sphere", "at": [0.42, 0.32, 1.12], "size": [0.13, 0.13, 0.13], "color": "#141419", "node": "planet", "outline": false, "mirror": true}
+    ],
+    "anim": [
+      {"node": "planet", "pos": [0, 0.12, 0], "freq": 1.6},
+      {"node": "moon", "rot": [0, 70, 0], "wave": "spin"},
+      {"node": "ring", "rot": [0, 0, 4], "freq": 1.2}
+    ],
+    "hat": {"node": "planet", "at": [0, 1.1, 0], "scale": 0.5}
+   },
+   {
+    "id": "blob",
+    "name": "Space Blob in a Jar",
+    "nodes": [
+      {"name": "blob", "at": [0, 1.15, 0]}
+    ],
+    "parts": [
+      {"shape": "wheel", "at": [1, 0.12, -1.1], "radius": 0.3, "width": 0.14, "color": "#55555F", "hub": "#6CF0FF", "mirror": true},
+      {"shape": "wheel", "at": [1, 0.12, 1.1], "radius": 0.3, "width": 0.14, "color": "#55555F", "hub": "#6CF0FF", "mirror": true},
+      {"shape": "cylinder", "at": [0, 0.45, 0], "size": [2.1, 0.15, 2.6], "color": "#55555F", "paint": true},
+      {"shape": "cylinder", "at": [0, 0.65, 0], "size": [2, 0.05, 2], "color": "#BFE6FF"},
+      {"shape": "cylinder", "at": [0, 2.3, 0], "size": [2, 0.05, 2], "color": "#BFE6FF"},
+      {"shape": "cylinder", "at": [0.98, 1.45, 0], "size": [0.08, 0.85, 0.08], "color": "#BFE6FF", "outline": false},
+      {"shape": "cylinder", "at": [0.49, 1.45, 0.8487], "size": [0.08, 0.85, 0.08], "color": "#BFE6FF", "outline": false},
+      {"shape": "cylinder", "at": [-0.49, 1.45, 0.8487], "size": [0.08, 0.85, 0.08], "color": "#BFE6FF", "outline": false},
+      {"shape": "cylinder", "at": [-0.98, 1.45, 0], "size": [0.08, 0.85, 0.08], "color": "#BFE6FF", "outline": false},
+      {"shape": "cylinder", "at": [-0.49, 1.45, -0.8487], "size": [0.08, 0.85, 0.08], "color": "#BFE6FF", "outline": false},
+      {"shape": "cylinder", "at": [0.49, 1.45, -0.8487], "size": [0.08, 0.85, 0.08], "color": "#BFE6FF", "outline": false},
+      {"shape": "cylinder", "at": [0, 2.38, 0], "size": [2.05, 0.08, 2.05], "color": "#9AA5B1"},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [1.5, 1.1, 1.5], "color": "#B45CFF", "node": "blob", "outline": false},
+      {"shape": "sphere", "at": [0.3, 0.2, 0.6], "size": [0.32, 0.32, 0.32], "color": "#FFFFFF", "node": "blob", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0.32, 0.22, 0.75], "size": [0.15, 0.15, 0.15], "color": "#141419", "node": "blob", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0, 0.5, 0.2], "size": [0.28, 0.28, 0.28], "color": "#FFFFFF", "node": "blob", "outline": false},
+      {"shape": "sphere", "at": [0, 0.52, 0.34], "size": [0.13, 0.13, 0.13], "color": "#141419", "node": "blob", "outline": false},
+      {"shape": "cylinder", "at": [0.6, 2.6, 0], "size": [0.06, 0.25, 0.06], "color": "#9AA5B1", "mirror": true},
+      {"shape": "sphere", "at": [0.6, 2.9, 0], "size": [0.15, 0.15, 0.15], "color": "#7CFF4F", "mirror": true}
+    ],
+    "anim": [
+      {"node": "blob", "pos": [0, 0.15, 0], "freq": 3},
+      {"node": "blob", "rot": [0, 20, 0], "freq": 1.2}
+    ],
+    "hat": {"node": "blob", "at": [0, 1.35, 0], "scale": 0.4}
+   }
+  ]
+}

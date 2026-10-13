@@ -1,0 +1,143 @@
+{
+  "format": 1,
+  "theme": "Sports",
+  "cars": [
+   {
+    "id": "soccerball",
+    "name": "Soccer Ball",
+    "nodes": [
+      {"name": "ball", "at": [0, 1.3, 0]},
+      {"name": "face", "at": [0, 1.3, 0]}
+    ],
+    "parts": [
+      {"shape": "sphere", "at": [0, 0, 0], "size": [2.5, 2.5, 2.5], "color": "#FFFFFF", "node": "ball"},
+      {"shape": "sphere", "at": [0, 1.0061, 0.654], "size": [0.6, 0.6, 0.6], "color": "#141419", "node": "ball", "outline": false},
+      {"shape": "sphere", "at": [0, -1.0061, -0.654], "size": [0.6, 0.6, 0.6], "color": "#141419", "node": "ball", "outline": false},
+      {"shape": "sphere", "at": [1.0482, 0.1997, 0.549], "size": [0.6, 0.6, 0.6], "color": "#141419", "node": "ball", "outline": false},
+      {"shape": "sphere", "at": [-1.0482, 0.1997, 0.549], "size": [0.6, 0.6, 0.6], "color": "#141419", "node": "ball", "outline": false},
+      {"shape": "sphere", "at": [1.0482, -0.1997, -0.549], "size": [0.6, 0.6, 0.6], "color": "#141419", "node": "ball", "outline": false},
+      {"shape": "sphere", "at": [-1.0482, -0.1997, -0.549], "size": [0.6, 0.6, 0.6], "color": "#141419", "node": "ball", "outline": false},
+      {"shape": "sphere", "at": [0, 0.3942, -1.1334], "size": [0.6, 0.6, 0.6], "color": "#141419", "node": "ball", "outline": false},
+      {"shape": "sphere", "at": [0, -0.3942, 1.1334], "size": [0.6, 0.6, 0.6], "color": "#141419", "node": "ball", "outline": false},
+      {"shape": "sphere", "at": [0.45, 0.3, 1.15], "size": [0.35, 0.35, 0.35], "color": "#FFFFFF", "node": "face", "mirror": true},
+      {"shape": "sphere", "at": [0.47, 0.3, 1.29], "size": [0.168, 0.168, 0.168], "color": "#141419", "node": "face", "outline": false, "mirror": true},
+      {"shape": "wheel", "at": [1.25, 0.1, -1.2], "radius": 0.3, "width": 0.14, "color": "#3E9B47", "hub": "#FFFFFF", "mirror": true},
+      {"shape": "wheel", "at": [1.25, 0.1, 1.2], "radius": 0.3, "width": 0.14, "color": "#3E9B47", "hub": "#FFFFFF", "mirror": true},
+      {"shape": "cube", "at": [0, 0.35, 0], "size": [2, 0.15, 2.8], "color": "#3E9B47", "paint": true}
+    ],
+    "anim": [
+      {"node": "ball", "rot": [-200, 0, 0], "wave": "spin"},
+      {"node": "face", "pos": [0, 0.06, 0], "freq": 6, "when": "moving"}
+    ],
+    "hat": {"node": "face", "at": [0, 1.25, -0.1], "scale": 0.5}
+   },
+   {
+    "id": "bowlingpin",
+    "name": "Bowling Pin",
+    "nodes": [
+      {"name": "pin", "at": [0, 0.45, 0]}
+    ],
+    "parts": [
+      {"shape": "cube", "at": [0, 0.35, 0], "size": [2, 0.2, 3], "color": "#C98E45", "paint": true},
+      {"shape": "cube", "at": [0, 0.46, -1.2], "size": [2, 0.02, 0.04], "color": "#A0673A", "outline": false},
+      {"shape": "cube", "at": [0, 0.46, -0.6], "size": [2, 0.02, 0.04], "color": "#A0673A", "outline": false},
+      {"shape": "cube", "at": [0, 0.46, 0], "size": [2, 0.02, 0.04], "color": "#A0673A", "outline": false},
+      {"shape": "cube", "at": [0, 0.46, 0.6], "size": [2, 0.02, 0.04], "color": "#A0673A", "outline": false},
+      {"shape": "cube", "at": [0, 0.46, 1.2], "size": [2, 0.02, 0.04], "color": "#A0673A", "outline": false},
+      {"shape": "wheel", "at": [1.1, 0.1, -1.2], "radius": 0.28, "width": 0.14, "color": "#22222A", "hub": "#E0352B", "mirror": true},
+      {"shape": "wheel", "at": [1.1, 0.1, 1.2], "radius": 0.28, "width": 0.14, "color": "#22222A", "hub": "#E0352B", "mirror": true},
+      {"shape": "sphere", "at": [0, 0.9, 0], "size": [1.5, 1.8, 1.5], "color": "#FAF7F0", "node": "pin"},
+      {"shape": "capsule", "at": [0, 2, 0], "size": [0.8, 0.6, 0.8], "color": "#FAF7F0", "node": "pin"},
+      {"shape": "cylinder", "at": [0, 2, 0], "size": [0.85, 0.08, 0.85], "color": "#E0352B", "node": "pin", "paint": "always"},
+      {"shape": "cylinder", "at": [0, 2.2, 0], "size": [0.83, 0.05, 0.83], "color": "#E0352B", "node": "pin", "paint": "always"},
+      {"shape": "sphere", "at": [0, 2.75, 0], "size": [0.95, 0.95, 0.95], "color": "#FAF7F0", "node": "pin"},
+      {"shape": "sphere", "at": [0.2, 2.8, 0.42], "size": [0.22, 0.22, 0.22], "color": "#FFFFFF", "node": "pin", "mirror": true},
+      {"shape": "sphere", "at": [0.22, 2.8, 0.508], "size": [0.1056, 0.1056, 0.1056], "color": "#141419", "node": "pin", "outline": false, "mirror": true}
+    ],
+    "anim": [
+      {"node": "pin", "rot": [0, 0, 6], "freq": 2.2},
+      {"node": "pin", "rot": [-8, 0, 0], "wave": "const", "when": "moving"}
+    ],
+    "hat": {"node": "pin", "at": [0, 3.2, 0], "scale": 0.4}
+   },
+   {
+    "id": "basketball",
+    "name": "Basketball Hoop Cart",
+    "nodes": [
+      {"name": "ball", "at": [0, 1.4, 0.4]}
+    ],
+    "parts": [
+      {"shape": "cube", "at": [0, 0.4, 0], "size": [2.2, 0.25, 3.2], "color": "#3A7BD5", "paint": true},
+      {"shape": "wheel", "at": [1.2, 0.1, -1.25], "radius": 0.3, "width": 0.14, "color": "#22222A", "hub": "#FFFFFF", "mirror": true},
+      {"shape": "wheel", "at": [1.2, 0.1, 1.25], "radius": 0.3, "width": 0.14, "color": "#22222A", "hub": "#FFFFFF", "mirror": true},
+      {"shape": "cylinder", "at": [0, 1.6, -1.3], "size": [0.15, 1.2, 0.15], "color": "#55555F"},
+      {"shape": "cube", "at": [0, 2.9, -1.2], "size": [1.8, 1.2, 0.1], "color": "#FFFFFF"},
+      {"shape": "cube", "at": [0, 2.75, -1.14], "size": [0.7, 0.5, 0.02], "color": "#E0352B", "outline": false},
+      {"shape": "cylinder", "at": [0, 2.45, -0.75], "size": [0.8, 0.04, 0.8], "color": "#E0352B"},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [1.4, 1.4, 1.4], "color": "#F28A1E", "node": "ball"},
+      {"shape": "cube", "at": [0, 0, 0], "size": [1.42, 0.04, 0.04], "color": "#2A1A10", "node": "ball", "outline": false},
+      {"shape": "cube", "at": [0, 0, 0], "size": [0.04, 1.42, 0.04], "color": "#2A1A10", "node": "ball", "outline": false},
+      {"shape": "cylinder", "at": [0, 0, 0], "size": [1.42, 0.02, 1.42], "color": "#2A1A10", "rot": [90, 0, 0], "node": "ball", "outline": false},
+      {"shape": "sphere", "at": [0.25, 0.15, 0.62], "size": [0.22, 0.22, 0.22], "color": "#FFFFFF", "node": "ball", "mirror": true},
+      {"shape": "sphere", "at": [0.27, 0.15, 0.708], "size": [0.1056, 0.1056, 0.1056], "color": "#141419", "node": "ball", "outline": false, "mirror": true}
+    ],
+    "anim": [
+      {"node": "ball", "pos": [0, 0.6, 0], "freq": 5, "wave": "up"}
+    ],
+    "hat": {"node": "ball", "at": [0, 0.75, 0], "scale": 0.4}
+   },
+   {
+    "id": "rollerskate",
+    "name": "Giant Roller Skate",
+    "nodes": [
+      {"name": "boot", "at": [0, 0.6, 0]}
+    ],
+    "parts": [
+      {"shape": "cube", "at": [0, 0.4, 0], "size": [1.6, 0.35, 3.4], "color": "#FFFFFF"},
+      {"shape": "wheel", "at": [0.6, 0, -1.2], "radius": 0.35, "width": 0.3, "color": "#FFD23F", "hub": "#FFFFFF", "mirror": true},
+      {"shape": "wheel", "at": [0.6, 0, 1.2], "radius": 0.35, "width": 0.3, "color": "#FFD23F", "hub": "#FFFFFF", "mirror": true},
+      {"shape": "cube", "at": [0, 0.4, 1.85], "size": [0.6, 0.35, 0.3], "color": "#E0352B"},
+      {"shape": "capsule", "at": [0, 0.5, 0.6], "size": [1.5, 1.5, 1.2], "color": "#FF5FA2", "rot": [90, 0, 0], "node": "boot", "paint": true},
+      {"shape": "cube", "at": [0, 1.4, -0.6], "size": [1.5, 2, 1.5], "color": "#FF5FA2", "node": "boot", "paint": true},
+      {"shape": "cube", "at": [0, 2.45, -0.6], "size": [1.6, 0.2, 1.6], "color": "#FFFFFF", "node": "boot"},
+      {"shape": "cube", "at": [0, 0.9, 0.18], "size": [0.9, 0.06, 0.06], "color": "#FFF3D6", "rot": [0, 0, 15], "node": "boot", "outline": false},
+      {"shape": "cube", "at": [0, 1.3, 0.18], "size": [0.9, 0.06, 0.06], "color": "#FFF3D6", "rot": [0, 0, 15], "node": "boot", "outline": false},
+      {"shape": "cube", "at": [0, 1.7, 0.18], "size": [0.9, 0.06, 0.06], "color": "#FFF3D6", "rot": [0, 0, 15], "node": "boot", "outline": false},
+      {"shape": "cube", "at": [0, 2.1, 0.18], "size": [0.9, 0.06, 0.06], "color": "#FFF3D6", "rot": [0, 0, 15], "node": "boot", "outline": false},
+      {"shape": "sphere", "at": [0.3, 1.95, 0.17], "size": [0.25, 0.25, 0.25], "color": "#FFFFFF", "node": "boot", "mirror": true},
+      {"shape": "sphere", "at": [0.32, 1.95, 0.27], "size": [0.12, 0.12, 0.12], "color": "#141419", "node": "boot", "outline": false, "mirror": true}
+    ],
+    "anim": [
+      {"node": "boot", "rot": [0, 0, 4], "freq": 7, "when": "moving"},
+      {"node": "boot", "pos": [0, 0.04, 0], "freq": 1.5}
+    ],
+    "hat": {"node": "boot", "at": [0, 2.6, -0.6], "scale": 0.5}
+   },
+   {
+    "id": "trophy",
+    "name": "Golden Trophy",
+    "nodes": [
+      {"name": "cup", "at": [0, 0.55, 0]}
+    ],
+    "parts": [
+      {"shape": "cube", "at": [0, 0.4, 0], "size": [2, 0.3, 2.6], "color": "#3A2A20"},
+      {"shape": "wheel", "at": [1.05, 0.1, -1.1], "radius": 0.3, "width": 0.14, "color": "#3A2A20", "hub": "#F2C230", "mirror": true},
+      {"shape": "wheel", "at": [1.05, 0.1, 1.1], "radius": 0.3, "width": 0.14, "color": "#3A2A20", "hub": "#F2C230", "mirror": true},
+      {"shape": "cube", "at": [0, 0.25, 0], "size": [1.3, 0.3, 1.3], "color": "#C99A1A", "node": "cup"},
+      {"shape": "cylinder", "at": [0, 0.7, 0], "size": [0.35, 0.3, 0.35], "color": "#F2C230", "node": "cup", "paint": true},
+      {"shape": "sphere", "at": [0, 1.75, 0], "size": [1.9, 1.7, 1.9], "color": "#F2C230", "node": "cup", "paint": true},
+      {"shape": "cylinder", "at": [0, 2.45, 0], "size": [1.95, 0.15, 1.95], "color": "#F2C230", "node": "cup", "paint": true},
+      {"shape": "cylinder", "at": [0, 2.52, 0], "size": [1.6, 0.05, 1.6], "color": "#C99A1A", "node": "cup", "outline": false},
+      {"shape": "capsule", "at": [1, 1.9, 0], "size": [0.18, 0.45, 0.18], "color": "#F2C230", "rot": [0, 0, 30], "node": "cup", "mirror": true},
+      {"shape": "cube", "at": [0, 1.6, 0.95], "size": [0.5, 0.35, 0.05], "color": "#C99A1A", "node": "cup", "outline": false},
+      {"shape": "sphere", "at": [0.35, 2, 0.88], "size": [0.26, 0.26, 0.26], "color": "#FFFFFF", "node": "cup", "mirror": true},
+      {"shape": "sphere", "at": [0.37, 2, 0.984], "size": [0.1248, 0.1248, 0.1248], "color": "#141419", "node": "cup", "outline": false, "mirror": true}
+    ],
+    "anim": [
+      {"node": "cup", "rot": [0, 25, 0], "freq": 0.8},
+      {"node": "cup", "pos": [0, 0.05, 0], "freq": 8, "when": "moving"}
+    ],
+    "hat": {"node": "cup", "at": [0, 2.6, 0], "scale": 0.5}
+   }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+ "maps": [
+  {
+   "guid": "1b4c2efe-663a-5fd8-885e-a5df87835023",
+   "name": "Teleporter Tangle",
+   "version": "a83a4111341e"
+  },
+  {
+   "guid": "1454c77b-8ec5-5074-9aa8-848901f87b7c",
+   "name": "Minefield",
+   "version": "b8efe8401534"
+  },
+  {
+   "guid": "ccfb69ef-028c-50e0-9e83-870126e6e157",
+   "name": "Hammer Time",
+   "version": "14113e9f5051"
+  },
+  {
+   "guid": "296763a8-5010-5c69-96a0-7e41ea0688a2",
+   "name": "Sky Ramps",
+   "version": "1954ca3fbc62"
+  },
+  {
+   "guid": "0cff8af2-ce1b-55df-acc8-6c87d7964610",
+   "name": "Hidden Alleys",
+   "version": "336ebfd8bc5d"
+  }
+ ]
+}
