@@ -1,0 +1,212 @@
+{
+  "format": 1,
+  "theme": "Food",
+  "cars": [
+   {
+    "id": "burger",
+    "name": "Burger",
+    "nodes": [
+      {"name": "burger", "at": [0, 0.3, 0]},
+      {"name": "top", "at": [0, 0.95, 0], "parent": "burger"}
+    ],
+    "parts": [
+      {"shape": "wheel", "at": [1.15, 0.12, -1.2], "radius": 0.32, "width": 0.16, "color": "#E0352B", "hub": "#FFF3D6", "mirror": true},
+      {"shape": "wheel", "at": [1.15, 0.12, 1.2], "radius": 0.32, "width": 0.16, "color": "#E0352B", "hub": "#FFF3D6", "mirror": true},
+      {"shape": "cylinder", "at": [0, 0.25, 0], "size": [2.8, 0.22, 3.2], "color": "#E0A458", "node": "burger"},
+      {"shape": "cylinder", "at": [0, 0.55, 0], "size": [3, 0.15, 3.4], "color": "#6B3A22", "node": "burger", "paint": true},
+      {"shape": "cube", "at": [0, 0.73, 0], "size": [2.6, 0.06, 2.6], "color": "#FFC93C", "rot": [0, 45, 0], "node": "burger", "outline": false},
+      {"shape": "cylinder", "at": [0, 0.8, 0], "size": [3.05, 0.05, 3.45], "color": "#6CC24A", "node": "burger", "outline": false},
+      {"shape": "cylinder", "at": [0.7165, 0.88, 0.2438], "size": [0.75, 0.05, 0.75], "color": "#E0352B", "node": "burger", "outline": false},
+      {"shape": "cylinder", "at": [0.0106, 0.88, 0.8249], "size": [0.75, 0.05, 0.75], "color": "#E0352B", "node": "burger", "outline": false},
+      {"shape": "cylinder", "at": [-0.7099, 0.88, 0.266], "size": [0.75, 0.05, 0.75], "color": "#E0352B", "node": "burger", "outline": false},
+      {"shape": "cylinder", "at": [-0.4494, 0.88, -0.6605], "size": [0.75, 0.05, 0.75], "color": "#E0352B", "node": "burger", "outline": false},
+      {"shape": "cylinder", "at": [0.4322, 0.88, -0.6742], "size": [0.75, 0.05, 0.75], "color": "#E0352B", "node": "burger", "outline": false},
+      {"shape": "sphere", "at": [0, 0.25, 0], "size": [2.9, 1.3, 3.3], "color": "#E0A458", "node": "top"},
+      {"shape": "sphere", "at": [0.8458, 0.6678, 0.0933], "size": [0.1, 0.05, 0.18], "color": "#FFF3D6", "rot": [0, 84.2704, 0], "node": "top", "outline": false},
+      {"shape": "sphere", "at": [0.5933, 0.7132, 0.6695], "size": [0.1, 0.05, 0.18], "color": "#FFF3D6", "rot": [0, 44.2704, 0], "node": "top", "outline": false},
+      {"shape": "sphere", "at": [0.0633, 0.8086, 0.9324], "size": [0.1, 0.05, 0.18], "color": "#FFF3D6", "rot": [0, 4.2704, 0], "node": "top", "outline": false},
+      {"shape": "sphere", "at": [-0.4964, 0.7307, 0.759], "size": [0.1, 0.05, 0.18], "color": "#FFF3D6", "rot": [0, -35.7296, 0], "node": "top", "outline": false},
+      {"shape": "sphere", "at": [-0.8238, 0.6717, 0.2305], "size": [0.1, 0.05, 0.18], "color": "#FFF3D6", "rot": [0, -75.7296, 0], "node": "top", "outline": false},
+      {"shape": "sphere", "at": [-0.7657, 0.6822, -0.4059], "size": [0.1, 0.05, 0.18], "color": "#FFF3D6", "rot": [0, -115.7296, 0], "node": "top", "outline": false},
+      {"shape": "sphere", "at": [-0.3494, 0.7571, -0.8524], "size": [0.1, 0.05, 0.18], "color": "#FFF3D6", "rot": [0, -155.7296, 0], "node": "top", "outline": false},
+      {"shape": "sphere", "at": [0.2304, 0.7785, -0.9], "size": [0.1, 0.05, 0.18], "color": "#FFF3D6", "rot": [0, 164.2704, 0], "node": "top", "outline": false},
+      {"shape": "sphere", "at": [0.7024, 0.6936, -0.5265], "size": [0.1, 0.05, 0.18], "color": "#FFF3D6", "rot": [0, 124.2704, 0], "node": "top", "outline": false},
+      {"shape": "sphere", "at": [0.45, 0.45, 1.4], "size": [0.24, 0.24, 0.24], "color": "#FFFFFF", "node": "top", "mirror": true},
+      {"shape": "sphere", "at": [0.47, 0.46, 1.496], "size": [0.12, 0.12, 0.12], "color": "#141419", "node": "top", "outline": false, "mirror": true}
+    ],
+    "anim": [
+      {"node": "top", "pos": [0, 0.15, 0], "freq": 2.5, "wave": "up"},
+      {"node": "top", "rot": [-6, 0, 0], "freq": 2.5, "wave": "up"},
+      {"node": "burger", "rot": [0, 0, 3], "freq": 6, "when": "moving"}
+    ],
+    "hat": {"node": "top", "at": [0, 0.88, -0.2], "scale": 0.5}
+   },
+   {
+    "id": "pizza",
+    "name": "Pizza Slice",
+    "nodes": [
+      {"name": "slice", "at": [0, 0.55, 0.2]},
+      {"name": "face", "at": [0, 0.35, -0.9], "parent": "slice"}
+    ],
+    "parts": [
+      {"shape": "wheel", "at": [0.9, 0.1, -1.2], "radius": 0.3, "width": 0.14, "color": "#C0392B", "hub": "#FFD45E", "mirror": true},
+      {"shape": "wheel", "at": [0.9, 0.1, 1.2], "radius": 0.3, "width": 0.14, "color": "#C0392B", "hub": "#FFD45E", "mirror": true},
+      {"shape": "cube", "at": [-0.42, 0, 0.1], "size": [0.9, 0.18, 3.2], "color": "#FFD45E", "rot": [0, -14, 0], "node": "slice", "paint": true},
+      {"shape": "cube", "at": [0.42, 0, 0.1], "size": [0.9, 0.18, 3.2], "color": "#FFD45E", "rot": [0, 14, 0], "node": "slice", "paint": true},
+      {"shape": "cube", "at": [0, -0.12, 0.1], "size": [1.4, 0.06, 2.6], "color": "#E0352B", "node": "slice", "outline": false},
+      {"shape": "capsule", "at": [0, 0.05, -1.45], "size": [0.5, 1.1, 0.5], "color": "#E0A458", "rot": [0, 0, 90], "node": "slice"},
+      {"shape": "cylinder", "at": [0, 0.11, -0.6], "size": [0.42, 0.03, 0.42], "color": "#C0392B", "node": "slice", "outline": false},
+      {"shape": "cylinder", "at": [0.45, 0.11, -0.95], "size": [0.42, 0.03, 0.42], "color": "#C0392B", "node": "slice", "outline": false},
+      {"shape": "cylinder", "at": [-0.45, 0.11, -0.85], "size": [0.42, 0.03, 0.42], "color": "#C0392B", "node": "slice", "outline": false},
+      {"shape": "cylinder", "at": [0.2, 0.11, 0.3], "size": [0.42, 0.03, 0.42], "color": "#C0392B", "node": "slice", "outline": false},
+      {"shape": "cylinder", "at": [-0.2, 0.11, 0.9], "size": [0.42, 0.03, 0.42], "color": "#C0392B", "node": "slice", "outline": false},
+      {"shape": "cylinder", "at": [0.3, 0.11, 0.05], "size": [0.18, 0.035, 0.18], "color": "#2A2A2A", "node": "slice", "outline": false},
+      {"shape": "cylinder", "at": [-0.35, 0.11, -0.2], "size": [0.18, 0.035, 0.18], "color": "#2A2A2A", "node": "slice", "outline": false},
+      {"shape": "cylinder", "at": [0.05, 0.11, 1.3], "size": [0.18, 0.035, 0.18], "color": "#2A2A2A", "node": "slice", "outline": false},
+      {"shape": "sphere", "at": [-0.3, 0.12, 0.6], "size": [0.25, 0.03, 0.15], "color": "#3E9B47", "rot": [0, 30, 0], "node": "slice", "outline": false},
+      {"shape": "capsule", "at": [-0.62, -0.25, 0.55], "size": [0.12, 0.2, 0.12], "color": "#FFD45E", "node": "slice", "outline": false},
+      {"shape": "capsule", "at": [0.62, -0.25, 0.55], "size": [0.12, 0.2, 0.12], "color": "#FFD45E", "node": "slice", "outline": false},
+      {"shape": "sphere", "at": [0.3, 0.1, 0.2], "size": [0.22, 0.22, 0.22], "color": "#FFFFFF", "node": "face", "mirror": true},
+      {"shape": "sphere", "at": [0.32, 0.11, 0.288], "size": [0.11, 0.11, 0.11], "color": "#141419", "node": "face", "outline": false, "mirror": true}
+    ],
+    "anim": [
+      {"node": "slice", "rot": [0, 0, 4], "freq": 1.5},
+      {"node": "slice", "pos": [0, 0.05, 0], "freq": 8, "when": "moving"},
+      {"node": "face", "rot": [0, 15, 0], "freq": 0.8}
+    ],
+    "hat": {"node": "slice", "at": [0, 0.55, -1.45], "scale": 0.45}
+   },
+   {
+    "id": "sushi",
+    "name": "Sushi Roller",
+    "nodes": [
+      {"name": "nigiri", "at": [0, 0.8, 0]},
+      {"name": "fish", "at": [0, 0.72, 0], "parent": "nigiri"},
+      {"name": "sticks", "at": [0.9, 1.4, -0.5]}
+    ],
+    "parts": [
+      {"shape": "cube", "at": [0, 0.38, 0], "size": [2.4, 0.18, 3.6], "color": "#2D3A4A", "paint": true},
+      {"shape": "wheel", "at": [1.1, 0.1, -1.3], "radius": 0.28, "width": 0.14, "color": "#2D3A4A", "hub": "#E0352B", "mirror": true},
+      {"shape": "wheel", "at": [1.1, 0.1, 1.3], "radius": 0.28, "width": 0.14, "color": "#2D3A4A", "hub": "#E0352B", "mirror": true},
+      {"shape": "capsule", "at": [0, 0.15, 0], "size": [1.6, 1.4, 1.2], "color": "#FAF7F0", "rot": [90, 0, 0], "node": "nigiri"},
+      {"shape": "capsule", "at": [0, 0, 0], "size": [1.75, 1.55, 0.45], "color": "#FF8C61", "rot": [90, 0, 0], "node": "fish"},
+      {"shape": "cube", "at": [0, 0.12, -0.9], "size": [1.5, 0.05, 0.08], "color": "#FFC1A3", "rot": [0, 25, 0], "node": "fish", "outline": false},
+      {"shape": "cube", "at": [0, 0.12, -0.45], "size": [1.5, 0.05, 0.08], "color": "#FFC1A3", "rot": [0, 25, 0], "node": "fish", "outline": false},
+      {"shape": "cube", "at": [0, 0.12, 0], "size": [1.5, 0.05, 0.08], "color": "#FFC1A3", "rot": [0, 25, 0], "node": "fish", "outline": false},
+      {"shape": "cube", "at": [0, 0.12, 0.45], "size": [1.5, 0.05, 0.08], "color": "#FFC1A3", "rot": [0, 25, 0], "node": "fish", "outline": false},
+      {"shape": "cube", "at": [0, 0.12, 0.9], "size": [1.5, 0.05, 0.08], "color": "#FFC1A3", "rot": [0, 25, 0], "node": "fish", "outline": false},
+      {"shape": "cube", "at": [0, 0.45, 0], "size": [1.95, 1.1, 0.4], "color": "#1F2E26", "node": "nigiri"},
+      {"shape": "sphere", "at": [0.3, 0.22, 1.25], "size": [0.2, 0.2, 0.2], "color": "#FFFFFF", "node": "fish", "mirror": true},
+      {"shape": "sphere", "at": [0.32, 0.23, 1.33], "size": [0.1, 0.1, 0.1], "color": "#141419", "node": "fish", "outline": false, "mirror": true},
+      {"shape": "cylinder", "at": [0, 0, 0], "size": [0.07, 1.1, 0.07], "color": "#C98E45", "rot": [70, 0, -20], "node": "sticks"},
+      {"shape": "cylinder", "at": [0.18, 0.05, 0], "size": [0.07, 1.1, 0.07], "color": "#C98E45", "rot": [70, 0, -10], "node": "sticks"}
+    ],
+    "anim": [
+      {"node": "fish", "rot": [0, 0, 4], "freq": 2},
+      {"node": "fish", "pos": [0, 0.06, 0], "freq": 2, "wave": "up"},
+      {"node": "sticks", "rot": [0, 0, 10], "freq": 3},
+      {"node": "nigiri", "rot": [0, 0, 3], "freq": 6, "when": "moving"}
+    ],
+    "hat": {"node": "fish", "at": [0, 0.32, -0.3], "scale": 0.45}
+   },
+   {
+    "id": "donut",
+    "name": "Donut",
+    "nodes": [
+      {"name": "donut", "at": [0, 1.05, 0]}
+    ],
+    "parts": [
+      {"shape": "wheel", "at": [1.2, 0.12, -1.25], "radius": 0.3, "width": 0.14, "color": "#FF8FB1", "hub": "#FFFFFF", "mirror": true},
+      {"shape": "wheel", "at": [1.2, 0.12, 1.25], "radius": 0.3, "width": 0.14, "color": "#FF8FB1", "hub": "#FFFFFF", "mirror": true},
+      {"shape": "sphere", "at": [1.05, 0, 0], "size": [1.05, 0.95, 1.05], "color": "#E0A458", "node": "donut"},
+      {"shape": "sphere", "at": [0.9093, 0, 0.525], "size": [1.05, 0.95, 1.05], "color": "#E0A458", "node": "donut"},
+      {"shape": "sphere", "at": [0.525, 0, 0.9093], "size": [1.05, 0.95, 1.05], "color": "#E0A458", "node": "donut"},
+      {"shape": "sphere", "at": [0, 0, 1.05], "size": [1.05, 0.95, 1.05], "color": "#E0A458", "node": "donut"},
+      {"shape": "sphere", "at": [-0.525, 0, 0.9093], "size": [1.05, 0.95, 1.05], "color": "#E0A458", "node": "donut"},
+      {"shape": "sphere", "at": [-0.9093, 0, 0.525], "size": [1.05, 0.95, 1.05], "color": "#E0A458", "node": "donut"},
+      {"shape": "sphere", "at": [-1.05, 0, 0], "size": [1.05, 0.95, 1.05], "color": "#E0A458", "node": "donut"},
+      {"shape": "sphere", "at": [-0.9093, 0, -0.525], "size": [1.05, 0.95, 1.05], "color": "#E0A458", "node": "donut"},
+      {"shape": "sphere", "at": [-0.525, 0, -0.9093], "size": [1.05, 0.95, 1.05], "color": "#E0A458", "node": "donut"},
+      {"shape": "sphere", "at": [0, 0, -1.05], "size": [1.05, 0.95, 1.05], "color": "#E0A458", "node": "donut"},
+      {"shape": "sphere", "at": [0.525, 0, -0.9093], "size": [1.05, 0.95, 1.05], "color": "#E0A458", "node": "donut"},
+      {"shape": "sphere", "at": [0.9093, 0, -0.525], "size": [1.05, 0.95, 1.05], "color": "#E0A458", "node": "donut"},
+      {"shape": "sphere", "at": [1.05, 0.2, 0], "size": [1, 0.65, 1], "color": "#FF8FB1", "node": "donut", "outline": false, "paint": true},
+      {"shape": "sphere", "at": [0.9093, 0.2, 0.525], "size": [1, 0.65, 1], "color": "#FF8FB1", "node": "donut", "outline": false, "paint": true},
+      {"shape": "sphere", "at": [0.525, 0.2, 0.9093], "size": [1, 0.65, 1], "color": "#FF8FB1", "node": "donut", "outline": false, "paint": true},
+      {"shape": "sphere", "at": [0, 0.2, 1.05], "size": [1, 0.65, 1], "color": "#FF8FB1", "node": "donut", "outline": false, "paint": true},
+      {"shape": "sphere", "at": [-0.525, 0.2, 0.9093], "size": [1, 0.65, 1], "color": "#FF8FB1", "node": "donut", "outline": false, "paint": true},
+      {"shape": "sphere", "at": [-0.9093, 0.2, 0.525], "size": [1, 0.65, 1], "color": "#FF8FB1", "node": "donut", "outline": false, "paint": true},
+      {"shape": "sphere", "at": [-1.05, 0.2, 0], "size": [1, 0.65, 1], "color": "#FF8FB1", "node": "donut", "outline": false, "paint": true},
+      {"shape": "sphere", "at": [-0.9093, 0.2, -0.525], "size": [1, 0.65, 1], "color": "#FF8FB1", "node": "donut", "outline": false, "paint": true},
+      {"shape": "sphere", "at": [-0.525, 0.2, -0.9093], "size": [1, 0.65, 1], "color": "#FF8FB1", "node": "donut", "outline": false, "paint": true},
+      {"shape": "sphere", "at": [0, 0.2, -1.05], "size": [1, 0.65, 1], "color": "#FF8FB1", "node": "donut", "outline": false, "paint": true},
+      {"shape": "sphere", "at": [0.525, 0.2, -0.9093], "size": [1, 0.65, 1], "color": "#FF8FB1", "node": "donut", "outline": false, "paint": true},
+      {"shape": "sphere", "at": [0.9093, 0.2, -0.525], "size": [1, 0.65, 1], "color": "#FF8FB1", "node": "donut", "outline": false, "paint": true},
+      {"shape": "cube", "at": [0.9603, 0.55, 0.1451], "size": [0.07, 0.05, 0.22], "color": "#FFFFFF", "node": "donut", "outline": false},
+      {"shape": "cube", "at": [0.9911, 0.55, 0.5402], "size": [0.07, 0.05, 0.22], "color": "#5BC0EB", "rot": [0, 47, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [0.6424, 0.55, 0.7285], "size": [0.07, 0.05, 0.22], "color": "#FFD23F", "rot": [0, 94, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [0.412, 0.55, 1.0509], "size": [0.07, 0.05, 0.22], "color": "#7CDB54", "rot": [0, 141, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [0.0238, 0.55, 0.971], "size": [0.07, 0.05, 0.22], "color": "#E0352B", "rot": [0, 188, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [-0.3599, 0.55, 1.0698], "size": [0.07, 0.05, 0.22], "color": "#FFFFFF", "rot": [0, 235, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [-0.6059, 0.55, 0.7591], "size": [0.07, 0.05, 0.22], "color": "#5BC0EB", "rot": [0, 282, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [-0.9634, 0.55, 0.5882], "size": [0.07, 0.05, 0.22], "color": "#FFD23F", "rot": [0, 329, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [-0.9521, 0.55, 0.1921], "size": [0.07, 0.05, 0.22], "color": "#7CDB54", "rot": [0, 376, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [-1.1161, 0.55, -0.1687], "size": [0.07, 0.05, 0.22], "color": "#E0352B", "rot": [0, 423, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [-0.8528, 0.55, -0.4648], "size": [0.07, 0.05, 0.22], "color": "#FFFFFF", "rot": [0, 470, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [-0.7465, 0.55, -0.8466], "size": [0.07, 0.05, 0.22], "color": "#5BC0EB", "rot": [0, 517, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [-0.3545, 0.55, -0.9043], "size": [0.07, 0.05, 0.22], "color": "#FFD23F", "rot": [0, 564, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [-0.0277, 0.55, -1.1284], "size": [0.07, 0.05, 0.22], "color": "#7CDB54", "rot": [0, 611, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [0.3097, 0.55, -0.9206], "size": [0.07, 0.05, 0.22], "color": "#E0352B", "rot": [0, 658, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [0.7041, 0.55, -0.8822], "size": [0.07, 0.05, 0.22], "color": "#FFFFFF", "rot": [0, 705, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [0.829, 0.55, -0.5061], "size": [0.07, 0.05, 0.22], "color": "#5BC0EB", "rot": [0, 752, 0], "node": "donut", "outline": false},
+      {"shape": "cube", "at": [1.1065, 0.55, -0.2232], "size": [0.07, 0.05, 0.22], "color": "#FFD23F", "rot": [0, 799, 0], "node": "donut", "outline": false},
+      {"shape": "sphere", "at": [0.4, 0.35, 1.9], "size": [0.24, 0.24, 0.24], "color": "#FFFFFF", "node": "donut", "mirror": true},
+      {"shape": "sphere", "at": [0.42, 0.36, 1.996], "size": [0.12, 0.12, 0.12], "color": "#141419", "node": "donut", "outline": false, "mirror": true}
+    ],
+    "anim": [
+      {"node": "donut", "rot": [0, 0, 4], "freq": 7, "when": "moving"},
+      {"node": "donut", "rot": [0, 30, 0], "wave": "spin"},
+      {"node": "donut", "pos": [0, 0.05, 0], "freq": 1.6}
+    ],
+    "hat": {"node": "donut", "at": [0, 0.55, -1.05], "scale": 0.45}
+   },
+   {
+    "id": "taco",
+    "name": "Taco",
+    "nodes": [
+      {"name": "taco", "at": [0, 0.35, 0]}
+    ],
+    "parts": [
+      {"shape": "wheel", "at": [1.1, 0.12, -1.25], "radius": 0.32, "width": 0.14, "color": "#3E9B47", "hub": "#E0352B", "mirror": true},
+      {"shape": "wheel", "at": [1.1, 0.12, 1.25], "radius": 0.32, "width": 0.14, "color": "#3E9B47", "hub": "#E0352B", "mirror": true},
+      {"shape": "cube", "at": [-1.05, 1.05, 0], "size": [0.6, 0.12, 3.4], "color": "#F2C25A", "rot": [0, 0, -90], "node": "taco", "paint": true},
+      {"shape": "cube", "at": [-0.9093, 0.525, 0], "size": [0.6, 0.12, 3.4], "color": "#F2C25A", "rot": [0, 0, -60], "node": "taco", "paint": true},
+      {"shape": "cube", "at": [-0.525, 0.1407, 0], "size": [0.6, 0.12, 3.4], "color": "#F2C25A", "rot": [0, 0, -30], "node": "taco", "paint": true},
+      {"shape": "cube", "at": [0, 0, 0], "size": [0.6, 0.12, 3.4], "color": "#F2C25A", "node": "taco", "paint": true},
+      {"shape": "cube", "at": [0.525, 0.1407, 0], "size": [0.6, 0.12, 3.4], "color": "#F2C25A", "rot": [0, 0, 30], "node": "taco", "paint": true},
+      {"shape": "cube", "at": [0.9093, 0.525, 0], "size": [0.6, 0.12, 3.4], "color": "#F2C25A", "rot": [0, 0, 60], "node": "taco", "paint": true},
+      {"shape": "cube", "at": [1.05, 1.05, 0], "size": [0.6, 0.12, 3.4], "color": "#F2C25A", "rot": [0, 0, 90], "node": "taco", "paint": true},
+      {"shape": "capsule", "at": [0, 1.4, 0], "size": [1.4, 1.6, 0.8], "color": "#7A4A2A", "rot": [90, 0, 0], "node": "taco"},
+      {"shape": "sphere", "at": [0.45, 1.85, -1], "size": [0.6, 0.35, 0.55], "color": "#6CC24A", "node": "taco"},
+      {"shape": "sphere", "at": [-0.5, 1.9, -0.3], "size": [0.6, 0.35, 0.55], "color": "#6CC24A", "node": "taco"},
+      {"shape": "sphere", "at": [0.5, 1.9, 0.4], "size": [0.6, 0.35, 0.55], "color": "#6CC24A", "node": "taco"},
+      {"shape": "sphere", "at": [-0.4, 1.85, 1.1], "size": [0.6, 0.35, 0.55], "color": "#6CC24A", "node": "taco"},
+      {"shape": "sphere", "at": [0.1, 1.95, 1.4], "size": [0.6, 0.35, 0.55], "color": "#6CC24A", "node": "taco"},
+      {"shape": "sphere", "at": [0, 1.95, -1.4], "size": [0.6, 0.35, 0.55], "color": "#6CC24A", "node": "taco"},
+      {"shape": "cube", "at": [0, 1.95, -0.6], "size": [0.6, 0.06, 0.12], "color": "#FFD45E", "node": "taco", "outline": false},
+      {"shape": "cube", "at": [0.3, 1.95, 0.8], "size": [0.6, 0.06, 0.12], "color": "#FFD45E", "rot": [0, 30, 0], "node": "taco", "outline": false},
+      {"shape": "cube", "at": [-0.25, 1.95, 0.2], "size": [0.6, 0.06, 0.12], "color": "#FFD45E", "rot": [0, -25, 0], "node": "taco", "outline": false},
+      {"shape": "cube", "at": [0.35, 1.92, -0.2], "size": [0.22, 0.22, 0.22], "color": "#E0352B", "node": "taco", "outline": false},
+      {"shape": "cube", "at": [-0.3, 1.92, -1], "size": [0.22, 0.22, 0.22], "color": "#E0352B", "node": "taco", "outline": false},
+      {"shape": "cube", "at": [-0.1, 1.92, 0.9], "size": [0.22, 0.22, 0.22], "color": "#E0352B", "node": "taco", "outline": false},
+      {"shape": "sphere", "at": [0.4, 1, 1.75], "size": [0.22, 0.22, 0.22], "color": "#FFFFFF", "node": "taco", "mirror": true},
+      {"shape": "sphere", "at": [0.42, 1.01, 1.838], "size": [0.11, 0.11, 0.11], "color": "#141419", "node": "taco", "outline": false, "mirror": true}
+    ],
+    "anim": [
+      {"node": "taco", "rot": [0, 0, 4], "freq": 1.4},
+      {"node": "taco", "pos": [0, 0.05, 0], "freq": 7, "when": "moving"}
+    ],
+    "hat": {"node": "taco", "at": [0, 2.1, -0.4], "scale": 0.45}
+   }
+  ]
+}

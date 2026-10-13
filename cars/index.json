@@ -1,0 +1,32 @@
+{
+ "packs": [
+  {
+   "file": "animals.json",
+   "version": "8ddd029e4956"
+  },
+  {
+   "file": "christmas.json",
+   "version": "97fec5c4912c"
+  },
+  {
+   "file": "classic.json",
+   "version": "552bca536e7e"
+  },
+  {
+   "file": "easter.json",
+   "version": "bc46824b39a1"
+  },
+  {
+   "file": "food.json",
+   "version": "f6efe59b577d"
+  },
+  {
+   "file": "halloween.json",
+   "version": "8f1921fbc54a"
+  },
+  {
+   "file": "summer.json",
+   "version": "3cdac09c9bcb"
+  }
+ ]
+}

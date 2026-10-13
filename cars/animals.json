@@ -1,0 +1,195 @@
+{
+  "format": 1,
+  "theme": "Animals",
+  "cars": [
+   {
+    "id": "frog",
+    "name": "Frog on a Lily Pad",
+    "nodes": [
+      {"name": "pad", "at": [0, 0.1, 0]},
+      {"name": "frog", "at": [0, 0.2, 0]},
+      {"name": "head", "at": [0, 1.4, 0.45], "parent": "frog"},
+      {"name": "tongue", "at": [0, -0.15, 0.6], "parent": "head"}
+    ],
+    "parts": [
+      {"shape": "cylinder", "at": [0, 0, 0], "size": [3.4, 0.1, 3.8], "color": "#3E9B47", "node": "pad", "paint": true},
+      {"shape": "cube", "at": [0.4, 0.06, 1.3], "size": [0.6, 0.12, 1.2], "color": "#F4F4F4", "rot": [0, 20, 0], "node": "pad", "outline": false},
+      {"shape": "sphere", "at": [-1.1, 0.25, -1], "size": [0.5, 0.4, 0.5], "color": "#FFB3C6", "node": "pad"},
+      {"shape": "sphere", "at": [-1.1, 0.4, -1], "size": [0.2, 0.2, 0.2], "color": "#FFE38A", "node": "pad", "outline": false},
+      {"shape": "sphere", "at": [0, 0.75, -0.1], "size": [1.8, 1.25, 1.9], "color": "#5CC24A", "node": "frog"},
+      {"shape": "sphere", "at": [0, 0.6, 0.35], "size": [1.3, 0.9, 1.2], "color": "#D9F2A0", "node": "frog", "outline": false},
+      {"shape": "sphere", "at": [0.85, 0.35, -0.5], "size": [0.6, 0.55, 1.2], "color": "#5CC24A", "node": "frog", "mirror": true},
+      {"shape": "sphere", "at": [1, 0.05, 0.3], "size": [0.55, 0.15, 0.5], "color": "#5CC24A", "node": "frog", "mirror": true},
+      {"shape": "capsule", "at": [0.55, 0.4, 0.75], "size": [0.25, 0.35, 0.25], "color": "#5CC24A", "node": "frog", "mirror": true},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [1.5, 0.85, 1.2], "color": "#5CC24A", "node": "head"},
+      {"shape": "sphere", "at": [0.42, 0.42, 0.05], "size": [0.55, 0.55, 0.55], "color": "#5CC24A", "node": "head", "mirror": true},
+      {"shape": "sphere", "at": [0.42, 0.48, 0.22], "size": [0.36, 0.36, 0.36], "color": "#FFFFFF", "node": "head", "mirror": true},
+      {"shape": "sphere", "at": [0.43, 0.5, 0.38], "size": [0.16, 0.16, 0.16], "color": "#141419", "node": "head", "outline": false, "mirror": true},
+      {"shape": "cube", "at": [0, -0.12, 0.6], "size": [0.9, 0.05, 0.05], "color": "#2A5A2A", "node": "head", "outline": false},
+      {"shape": "cube", "at": [0, 0, 0.3], "size": [0.14, 0.04, 0.6], "color": "#FF5A7A", "node": "tongue", "outline": false}
+    ],
+    "anim": [
+      {"node": "frog", "pos": [0, 0.35, 0], "freq": 5, "wave": "up", "when": "moving"},
+      {"node": "frog", "pos": [0, 0.03, 0], "freq": 2.5, "when": "idle"},
+      {"node": "tongue", "pos": [0, 0, -0.55], "wave": "const"},
+      {"node": "tongue", "pos": [0, 0, 0.55], "freq": 1.3, "wave": "up"},
+      {"node": "pad", "rot": [0, 0, 2], "freq": 1.2}
+    ],
+    "hat": {"node": "head", "at": [0, 0.42, -0.25], "scale": 0.45}
+   },
+   {
+    "id": "pig",
+    "name": "Pig in a Mud Tub",
+    "nodes": [
+      {"name": "pig", "at": [0, 1.15, 0]},
+      {"name": "head", "at": [0, 1, 0.75], "parent": "pig"}
+    ],
+    "parts": [
+      {"shape": "wheel", "at": [1.1, 0.1, -1.25], "radius": 0.3, "width": 0.14, "color": "#55555F", "hub": "#9AA5B1", "mirror": true},
+      {"shape": "wheel", "at": [1.1, 0.1, 1.25], "radius": 0.3, "width": 0.14, "color": "#55555F", "hub": "#9AA5B1", "mirror": true},
+      {"shape": "cylinder", "at": [0, 0.7, 0], "size": [2.7, 0.55, 3.4], "color": "#9AA5B1", "paint": true},
+      {"shape": "cylinder", "at": [0, 1.24, 0], "size": [2.8, 0.05, 3.5], "color": "#7A8592"},
+      {"shape": "cylinder", "at": [0, 1.22, 0], "size": [2.5, 0.05, 3.2], "color": "#7A5230", "outline": false},
+      {"shape": "sphere", "at": [0.8, 1.3, -1], "size": [0.45, 0.15, 0.45], "color": "#7A5230", "outline": false},
+      {"shape": "sphere", "at": [-0.9, 1.3, 0.8], "size": [0.45, 0.15, 0.45], "color": "#7A5230", "outline": false},
+      {"shape": "sphere", "at": [0.6, 1.3, 1.2], "size": [0.45, 0.15, 0.45], "color": "#7A5230", "outline": false},
+      {"shape": "sphere", "at": [0, 0.4, -0.2], "size": [1.6, 1.2, 1.9], "color": "#FFB3C6", "node": "pig"},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [1.15, 1.05, 1], "color": "#FFB3C6", "node": "head"},
+      {"shape": "cylinder", "at": [0, -0.1, 0.5], "size": [0.45, 0.1, 0.35], "color": "#F28CA8", "rot": [90, 0, 0], "node": "head"},
+      {"shape": "sphere", "at": [0.08, -0.1, 0.6], "size": [0.07, 0.11, 0.04], "color": "#8A4A5A", "node": "head", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0.25, 0.2, 0.42], "size": [0.12, 0.12, 0.12], "color": "#141419", "node": "head", "outline": false, "mirror": true},
+      {"shape": "cube", "at": [0.35, 0.5, 0], "size": [0.3, 0.3, 0.08], "color": "#F28CA8", "rot": [20, 0, 45], "node": "head", "mirror": true},
+      {"shape": "sphere", "at": [0, 0.7, -1.15], "size": [0.12, 0.12, 0.12], "color": "#F28CA8", "node": "pig"},
+      {"shape": "sphere", "at": [0.6, 0.2, 0.75], "size": [0.3, 0.25, 0.3], "color": "#FFB3C6", "node": "pig", "mirror": true}
+    ],
+    "anim": [
+      {"node": "pig", "rot": [0, 0, 5], "freq": 1.4},
+      {"node": "head", "rot": [0, 15, 0], "freq": 0.9, "when": "idle"},
+      {"node": "head", "rot": [-6, 0, 0], "freq": 8, "when": "moving"}
+    ],
+    "hat": {"node": "head", "at": [0, 0.5, -0.1], "scale": 0.45}
+   },
+   {
+    "id": "turtle",
+    "name": "Turbo Turtle",
+    "nodes": [
+      {"name": "turtle", "at": [0, 0, 0]},
+      {"name": "head", "at": [0, 0.85, 1.75], "parent": "turtle"},
+      {"name": "flame", "at": [0, 1.65, -1.45], "parent": "turtle"}
+    ],
+    "parts": [
+      {"shape": "sphere", "at": [0, 0.8, 0], "size": [2.6, 1.6, 3.2], "color": "#5C8A3A", "node": "turtle", "paint": true},
+      {"shape": "cube", "at": [0, 1.55, 0], "size": [0.6, 0.1, 0.6], "color": "#7DB34F", "rot": [0, 30, 0], "node": "turtle", "outline": false},
+      {"shape": "cube", "at": [0.8337, 1.25, 0.4555], "size": [0.6, 0.1, 0.6], "color": "#7DB34F", "rot": [0, 30, 0], "node": "turtle", "outline": false},
+      {"shape": "cube", "at": [0.0224, 1.25, 0.9497], "size": [0.6, 0.1, 0.6], "color": "#7DB34F", "rot": [0, 30, 0], "node": "turtle", "outline": false},
+      {"shape": "cube", "at": [-0.8113, 1.25, 0.4943], "size": [0.6, 0.1, 0.6], "color": "#7DB34F", "rot": [0, 30, 0], "node": "turtle", "outline": false},
+      {"shape": "cube", "at": [-0.8337, 1.25, -0.4555], "size": [0.6, 0.1, 0.6], "color": "#7DB34F", "rot": [0, 30, 0], "node": "turtle", "outline": false},
+      {"shape": "cube", "at": [-0.0224, 1.25, -0.9497], "size": [0.6, 0.1, 0.6], "color": "#7DB34F", "rot": [0, 30, 0], "node": "turtle", "outline": false},
+      {"shape": "cube", "at": [0.8113, 1.25, -0.4943], "size": [0.6, 0.1, 0.6], "color": "#7DB34F", "rot": [0, 30, 0], "node": "turtle", "outline": false},
+      {"shape": "cylinder", "at": [0, 0.45, 0], "size": [2.7, 0.12, 3.3], "color": "#7DB34F", "node": "turtle"},
+      {"shape": "capsule", "at": [1.05, 0.2, 1], "size": [0.5, 0.35, 0.5], "color": "#9BD46A", "node": "turtle", "mirror": true},
+      {"shape": "capsule", "at": [1.05, 0.2, -1], "size": [0.5, 0.35, 0.5], "color": "#9BD46A", "node": "turtle", "mirror": true},
+      {"shape": "sphere", "at": [0, 0, 0.1], "size": [0.8, 0.75, 0.95], "color": "#9BD46A", "node": "head"},
+      {"shape": "sphere", "at": [0.22, 0.12, 0.45], "size": [0.18, 0.18, 0.18], "color": "#FFFFFF", "node": "head", "mirror": true},
+      {"shape": "sphere", "at": [0.24, 0.13, 0.53], "size": [0.09, 0.09, 0.09], "color": "#141419", "node": "head", "outline": false, "mirror": true},
+      {"shape": "cube", "at": [0, 0.22, 0.2], "size": [0.85, 0.12, 0.4], "color": "#E0352B", "node": "head", "outline": false},
+      {"shape": "cube", "at": [0.35, 0.22, -0.3], "size": [0.06, 0.08, 0.4], "color": "#E0352B", "rot": [20, -20, 0], "node": "head", "outline": false, "mirror": true},
+      {"shape": "cylinder", "at": [0, 1.65, -0.6], "size": [0.6, 0.6, 0.6], "color": "#B9BFC8", "rot": [90, 0, 0], "node": "turtle"},
+      {"shape": "cylinder", "at": [0, 1.65, -1.25], "size": [0.45, 0.08, 0.45], "color": "#55555F", "rot": [90, 0, 0], "node": "turtle"},
+      {"shape": "sphere", "at": [0, 0, -0.25], "size": [0.4, 0.4, 0.7], "color": "#FF8A2B", "node": "flame", "outline": false},
+      {"shape": "sphere", "at": [0, 0, -0.1], "size": [0.22, 0.22, 0.4], "color": "#FFE38A", "node": "flame", "outline": false}
+    ],
+    "anim": [
+      {"node": "flame", "pos": [0, 0, -0.2], "freq": 25},
+      {"node": "head", "rot": [0, 18, 0], "freq": 0.8},
+      {"node": "turtle", "rot": [-4, 0, 0], "wave": "const", "when": "moving"},
+      {"node": "turtle", "pos": [0, 0.04, 0], "freq": 14, "when": "moving"}
+    ],
+    "hat": {"node": "turtle", "at": [0, 1.7, 0.4], "scale": 0.5}
+   },
+   {
+    "id": "panda",
+    "name": "Panda in a Bamboo Cart",
+    "nodes": [
+      {"name": "panda", "at": [0, 0.55, -0.1]},
+      {"name": "arm", "at": [0.7, 1.05, 0.35], "parent": "panda"},
+      {"name": "head", "at": [0, 2, 0.1], "parent": "panda"}
+    ],
+    "parts": [
+      {"shape": "cube", "at": [0, 0.45, 0], "size": [2.4, 0.2, 3.4], "color": "#8FCB4F", "paint": true},
+      {"shape": "cylinder", "at": [-1.15, 0.75, 0], "size": [0.25, 1.7, 0.25], "color": "#8FCB4F", "rot": [90, 0, 0]},
+      {"shape": "cylinder", "at": [-1.15, 0.75, -1.2], "size": [0.27, 0.03, 0.27], "color": "#5E9A2E", "rot": [90, 0, 0], "outline": false},
+      {"shape": "cylinder", "at": [-1.15, 0.75, -0.4], "size": [0.27, 0.03, 0.27], "color": "#5E9A2E", "rot": [90, 0, 0], "outline": false},
+      {"shape": "cylinder", "at": [-1.15, 0.75, 0.4], "size": [0.27, 0.03, 0.27], "color": "#5E9A2E", "rot": [90, 0, 0], "outline": false},
+      {"shape": "cylinder", "at": [-1.15, 0.75, 1.2], "size": [0.27, 0.03, 0.27], "color": "#5E9A2E", "rot": [90, 0, 0], "outline": false},
+      {"shape": "cylinder", "at": [1.15, 0.75, 0], "size": [0.25, 1.7, 0.25], "color": "#8FCB4F", "rot": [90, 0, 0]},
+      {"shape": "cylinder", "at": [1.15, 0.75, -1.2], "size": [0.27, 0.03, 0.27], "color": "#5E9A2E", "rot": [90, 0, 0], "outline": false},
+      {"shape": "cylinder", "at": [1.15, 0.75, -0.4], "size": [0.27, 0.03, 0.27], "color": "#5E9A2E", "rot": [90, 0, 0], "outline": false},
+      {"shape": "cylinder", "at": [1.15, 0.75, 0.4], "size": [0.27, 0.03, 0.27], "color": "#5E9A2E", "rot": [90, 0, 0], "outline": false},
+      {"shape": "cylinder", "at": [1.15, 0.75, 1.2], "size": [0.27, 0.03, 0.27], "color": "#5E9A2E", "rot": [90, 0, 0], "outline": false},
+      {"shape": "cylinder", "at": [0, 0.75, 1.65], "size": [0.25, 1.15, 0.25], "color": "#8FCB4F", "rot": [0, 0, 90]},
+      {"shape": "wheel", "at": [1.25, 0.12, -1.2], "radius": 0.32, "width": 0.14, "color": "#26262C", "hub": "#F7F7F7", "mirror": true},
+      {"shape": "wheel", "at": [1.25, 0.12, 1.2], "radius": 0.32, "width": 0.14, "color": "#26262C", "hub": "#F7F7F7", "mirror": true},
+      {"shape": "sphere", "at": [0, 0.75, 0], "size": [1.6, 1.5, 1.5], "color": "#F7F7F7", "node": "panda"},
+      {"shape": "cylinder", "at": [0, 1, 0], "size": [1.62, 0.25, 1.52], "color": "#26262C", "node": "panda", "outline": false},
+      {"shape": "sphere", "at": [0.55, 0.25, 0.55], "size": [0.55, 0.45, 0.65], "color": "#26262C", "node": "panda", "mirror": true},
+      {"shape": "capsule", "at": [0.05, 0.25, 0.2], "size": [0.4, 0.45, 0.4], "color": "#26262C", "rot": [-40, 0, 0], "node": "arm"},
+      {"shape": "cylinder", "at": [0.05, 0.7, 0.45], "size": [0.12, 0.6, 0.12], "color": "#8FCB4F", "rot": [10, 0, 0], "node": "arm"},
+      {"shape": "sphere", "at": [0.05, 1.3, 0.55], "size": [0.3, 0.1, 0.18], "color": "#5E9A2E", "rot": [0, 0, 30], "node": "arm", "outline": false},
+      {"shape": "capsule", "at": [-0.7, 1.05, 0.35], "size": [0.4, 0.45, 0.4], "color": "#26262C", "rot": [-30, 0, 10], "node": "panda"},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [1.15, 1, 1], "color": "#F7F7F7", "node": "head"},
+      {"shape": "sphere", "at": [0.4, 0.45, -0.05], "size": [0.35, 0.35, 0.35], "color": "#26262C", "node": "head", "mirror": true},
+      {"shape": "sphere", "at": [0.23, 0.05, 0.4], "size": [0.25, 0.3, 0.15], "color": "#26262C", "rot": [0, 0, -25], "node": "head", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0.24, 0.08, 0.46], "size": [0.08, 0.08, 0.08], "color": "#FFFFFF", "node": "head", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0, -0.15, 0.5], "size": [0.16, 0.1, 0.08], "color": "#26262C", "node": "head", "outline": false}
+    ],
+    "anim": [
+      {"node": "arm", "rot": [-20, 0, 0], "freq": 2.5, "wave": "up"},
+      {"node": "head", "rot": [0, 0, 6], "freq": 1.2},
+      {"node": "panda", "pos": [0, 0.04, 0], "freq": 8, "when": "moving"}
+    ],
+    "hat": {"node": "head", "at": [0, 0.5, -0.05], "scale": 0.45}
+   },
+   {
+    "id": "snail",
+    "name": "Snail",
+    "nodes": [
+      {"name": "snail", "at": [0, 0, 0]},
+      {"name": "shell", "at": [0, 1.35, -0.4], "parent": "snail"},
+      {"name": "head", "at": [0, 0.7, 1.75], "parent": "snail"},
+      {"name": "stalkL", "at": [-0.2, 0.35, 0], "parent": "head"},
+      {"name": "stalkR", "at": [0.2, 0.35, 0], "parent": "head"}
+    ],
+    "parts": [
+      {"shape": "capsule", "at": [0, 0.35, 0.2], "size": [1.1, 1.9, 0.55], "color": "#B8D98A", "rot": [90, 0, 0], "node": "snail"},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [1.3, 1.8, 1.8], "color": "#C98E45", "node": "shell", "paint": true},
+      {"shape": "sphere", "at": [0.62, 0, 0.75], "size": [0.14, 0.14, 0.14], "color": "#8B5A2B", "node": "shell", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0.62, 0.4635, 0.4975], "size": [0.14, 0.14, 0.14], "color": "#8B5A2B", "node": "shell", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0.62, 0.6085, 0.0431], "size": [0.14, 0.14, 0.14], "color": "#8B5A2B", "node": "shell", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0.62, 0.4202, -0.3392], "size": [0.14, 0.14, 0.14], "color": "#8B5A2B", "node": "shell", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0.62, 0.0663, -0.4653], "size": [0.14, 0.14, 0.14], "color": "#8B5A2B", "node": "shell", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0.62, -0.2286, -0.3282], "size": [0.14, 0.14, 0.14], "color": "#8B5A2B", "node": "shell", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0.62, -0.3226, -0.0696], "size": [0.14, 0.14, 0.14], "color": "#8B5A2B", "node": "shell", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0.62, -0.2233, 0.1331], "size": [0.14, 0.14, 0.14], "color": "#8B5A2B", "node": "shell", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0.62, -0.0531, 0.1824], "size": [0.14, 0.14, 0.14], "color": "#8B5A2B", "node": "shell", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0.62, 0.054, 0.1072], "size": [0.14, 0.14, 0.14], "color": "#8B5A2B", "node": "shell", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [0.85, 0.9, 0.8], "color": "#B8D98A", "node": "head"},
+      {"shape": "cylinder", "at": [-0.1, 0.4, 0], "size": [0.1, 0.4, 0.1], "color": "#B8D98A", "rot": [0, 0, 15], "node": "stalkL"},
+      {"shape": "sphere", "at": [-0.2, 0.85, 0], "size": [0.24, 0.24, 0.24], "color": "#FFFFFF", "node": "stalkL"},
+      {"shape": "sphere", "at": [-0.2, 0.86, 0.12], "size": [0.11, 0.11, 0.11], "color": "#141419", "node": "stalkL", "outline": false},
+      {"shape": "cylinder", "at": [0.1, 0.4, 0], "size": [0.1, 0.4, 0.1], "color": "#B8D98A", "rot": [0, 0, -15], "node": "stalkR"},
+      {"shape": "sphere", "at": [0.2, 0.85, 0], "size": [0.24, 0.24, 0.24], "color": "#FFFFFF", "node": "stalkR"},
+      {"shape": "sphere", "at": [0.2, 0.86, 0.12], "size": [0.11, 0.11, 0.11], "color": "#141419", "node": "stalkR", "outline": false},
+      {"shape": "sphere", "at": [0, -0.12, 0.38], "size": [0.3, 0.08, 0.05], "color": "#5A7A3A", "node": "head", "outline": false}
+    ],
+    "anim": [
+      {"node": "stalkL", "rot": [10, 0, -12], "freq": 1.7},
+      {"node": "stalkR", "rot": [10, 0, 12], "freq": 2.3},
+      {"node": "snail", "pos": [0, 0, 0.08], "freq": 4, "when": "moving"},
+      {"node": "shell", "rot": [0, 0, 3], "freq": 1.2},
+      {"node": "head", "rot": [0, 12, 0], "freq": 0.7}
+    ],
+    "hat": {"node": "shell", "at": [0, 0.9, 0], "scale": 0.5}
+   }
+  ]
+}

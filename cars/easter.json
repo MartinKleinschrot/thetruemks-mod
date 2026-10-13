@@ -1,0 +1,192 @@
+{
+  "format": 1,
+  "theme": "Easter",
+  "season": ["03-15", "04-30"],
+  "cars": [
+   {
+    "id": "bunny",
+    "name": "Easter Bunny",
+    "nodes": [
+      {"name": "bunny", "at": [0, 0, 0]},
+      {"name": "head", "at": [0, 2.15, 0.25], "parent": "bunny"},
+      {"name": "earL", "at": [-0.25, 0.4, -0.1], "parent": "head"},
+      {"name": "earR", "at": [0.25, 0.4, -0.1], "parent": "head"}
+    ],
+    "parts": [
+      {"shape": "sphere", "at": [0, 1.15, -0.2], "size": [1.5, 1.4, 1.8], "color": "#F2EDE8", "node": "bunny"},
+      {"shape": "sphere", "at": [0, 1.05, 0.35], "size": [1, 1, 0.9], "color": "#FFFFFF", "node": "bunny", "outline": false},
+      {"shape": "sphere", "at": [0, 1.15, -1.15], "size": [0.55, 0.55, 0.55], "color": "#FFFFFF", "node": "bunny"},
+      {"shape": "sphere", "at": [0.55, 0.45, -0.3], "size": [0.55, 0.45, 1.1], "color": "#F2EDE8", "node": "bunny", "mirror": true},
+      {"shape": "sphere", "at": [0.4, 0.4, 0.75], "size": [0.32, 0.3, 0.45], "color": "#F2EDE8", "node": "bunny", "mirror": true},
+      {"shape": "cube", "at": [0.75, 1.2, 0.55], "size": [0.12, 0.7, 0.5], "color": "#A0673A", "rot": [0, 0, -10], "node": "bunny", "paint": true},
+      {"shape": "sphere", "at": [0.8, 1.55, 0.55], "size": [0.25, 0.32, 0.22], "color": "#FFB3C6", "node": "bunny"},
+      {"shape": "sphere", "at": [0.8, 1.5, 0.35], "size": [0.25, 0.32, 0.22], "color": "#A8E6CF", "node": "bunny"},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [1.05, 0.95, 0.95], "color": "#F2EDE8", "node": "head"},
+      {"shape": "sphere", "at": [0.25, -0.15, 0.4], "size": [0.35, 0.3, 0.25], "color": "#FFFFFF", "node": "head", "mirror": true},
+      {"shape": "sphere", "at": [0, -0.05, 0.47], "size": [0.15, 0.1, 0.1], "color": "#FF8FB1", "node": "head", "outline": false},
+      {"shape": "sphere", "at": [0.22, 0.12, 0.38], "size": [0.16, 0.16, 0.16], "color": "#141419", "node": "head", "outline": false, "mirror": true},
+      {"shape": "cube", "at": [0.18, -0.35, 0.42], "size": [0.1, 0.14, 0.04], "color": "#FFFFFF", "node": "head", "outline": false},
+      {"shape": "capsule", "at": [0, 0.5, 0], "size": [0.3, 0.55, 0.18], "color": "#F2EDE8", "rot": [0, 0, 8], "node": "earL"},
+      {"shape": "capsule", "at": [0, 0.5, 0.06], "size": [0.16, 0.42, 0.1], "color": "#FFC4D6", "rot": [0, 0, 8], "node": "earL", "outline": false},
+      {"shape": "capsule", "at": [0, 0.5, 0], "size": [0.3, 0.55, 0.18], "color": "#F2EDE8", "rot": [0, 0, -8], "node": "earR"},
+      {"shape": "capsule", "at": [0, 0.5, 0.06], "size": [0.16, 0.42, 0.1], "color": "#FFC4D6", "rot": [0, 0, -8], "node": "earR", "outline": false}
+    ],
+    "anim": [
+      {"node": "bunny", "pos": [0, 0.45, 0], "freq": 6, "wave": "up", "when": "moving"},
+      {"node": "bunny", "rot": [-10, 0, 0], "freq": 6, "when": "moving"},
+      {"node": "bunny", "pos": [0, 0.03, 0], "freq": 2, "when": "idle"},
+      {"node": "earL", "rot": [0, 0, 12], "freq": 2.2},
+      {"node": "earR", "rot": [-15, 0, 0], "freq": 6, "phase": 1, "when": "moving"},
+      {"node": "earR", "rot": [0, 0, -8], "freq": 1.7},
+      {"node": "head", "rot": [0, 12, 0], "freq": 0.9, "when": "idle"}
+    ],
+    "hat": {"node": "head", "at": [0, 0.45, -0.1], "scale": 0.42}
+   },
+   {
+    "id": "egg",
+    "name": "Painted Egg",
+    "nodes": [
+      {"name": "egg", "at": [0, 1.55, 0]}
+    ],
+    "parts": [
+      {"shape": "wheel", "at": [0.95, 0.1, -1.2], "radius": 0.3, "width": 0.14, "color": "#7DC27D", "hub": "#FFFFFF", "mirror": true},
+      {"shape": "wheel", "at": [0.95, 0.1, 1.2], "radius": 0.3, "width": 0.14, "color": "#7DC27D", "hub": "#FFFFFF", "mirror": true},
+      {"shape": "cube", "at": [0, 0.35, 0], "size": [1.7, 0.2, 3], "color": "#F2EDE8"},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [2, 2.6, 2.2], "color": "#B5C8FF", "node": "egg", "paint": true},
+      {"shape": "sphere", "at": [0, 0.65, 0], "size": [1.8587, 0.26, 2.0319], "color": "#FFB3C6", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [2.14, 0.26, 2.34], "color": "#FFE38A", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [0, -0.65, 0], "size": [1.8587, 0.26, 2.0319], "color": "#A8E6CF", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [0.9311, 0.33, 0.1887], "size": [0.18, 0.18, 0.18], "color": "#FFFFFF", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [0.5249, 0.33, 0.7918], "size": [0.18, 0.18, 0.18], "color": "#FFFFFF", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [-0.1887, 0.33, 0.9311], "size": [0.18, 0.18, 0.18], "color": "#FFFFFF", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [-0.7918, 0.33, 0.5249], "size": [0.18, 0.18, 0.18], "color": "#FFFFFF", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [-0.9311, 0.33, -0.1887], "size": [0.18, 0.18, 0.18], "color": "#FFFFFF", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [-0.5249, 0.33, -0.7918], "size": [0.18, 0.18, 0.18], "color": "#FFFFFF", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [0.1887, 0.33, -0.9311], "size": [0.18, 0.18, 0.18], "color": "#FFFFFF", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [0.7918, 0.33, -0.5249], "size": [0.18, 0.18, 0.18], "color": "#FFFFFF", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [0.7841, -0.33, 0.5364], "size": [0.18, 0.18, 0.18], "color": "#FF8FB1", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [0.1751, -0.33, 0.9337], "size": [0.18, 0.18, 0.18], "color": "#FF8FB1", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [-0.5364, -0.33, 0.7841], "size": [0.18, 0.18, 0.18], "color": "#FF8FB1", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [-0.9337, -0.33, 0.1751], "size": [0.18, 0.18, 0.18], "color": "#FF8FB1", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [-0.7841, -0.33, -0.5364], "size": [0.18, 0.18, 0.18], "color": "#FF8FB1", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [-0.1751, -0.33, -0.9337], "size": [0.18, 0.18, 0.18], "color": "#FF8FB1", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [0.5364, -0.33, -0.7841], "size": [0.18, 0.18, 0.18], "color": "#FF8FB1", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [0.9337, -0.33, -0.1751], "size": [0.18, 0.18, 0.18], "color": "#FF8FB1", "node": "egg", "outline": false},
+      {"shape": "sphere", "at": [0.28, 0.3, 0.95], "size": [0.24, 0.24, 0.24], "color": "#FFFFFF", "node": "egg", "mirror": true},
+      {"shape": "sphere", "at": [0.3, 0.3, 1.05], "size": [0.12, 0.12, 0.12], "color": "#141419", "node": "egg", "outline": false, "mirror": true}
+    ],
+    "anim": [
+      {"node": "egg", "rot": [0, 0, 8], "freq": 2},
+      {"node": "egg", "rot": [-6, 0, 0], "wave": "const", "when": "moving"},
+      {"node": "egg", "rot": [0, 20, 0], "freq": 0.6, "when": "idle"}
+    ],
+    "hat": {"node": "egg", "at": [0, 1.3, 0], "scale": 0.5}
+   },
+   {
+    "id": "chick",
+    "name": "Chick in an Eggshell",
+    "nodes": [
+      {"name": "chick", "at": [0, 1.55, 0]},
+      {"name": "cap", "at": [0.3, 2.65, -0.4]}
+    ],
+    "parts": [
+      {"shape": "wheel", "at": [1, 0.1, -1.1], "radius": 0.3, "width": 0.14, "color": "#FFB3C6", "hub": "#FFFFFF", "mirror": true},
+      {"shape": "wheel", "at": [1, 0.1, 1.1], "radius": 0.3, "width": 0.14, "color": "#FFB3C6", "hub": "#FFFFFF", "mirror": true},
+      {"shape": "sphere", "at": [0, 0.95, 0], "size": [2.4, 1.6, 2.8], "color": "#FBF6EC", "paint": true},
+      {"shape": "cube", "at": [1.0746, 1.6, 0.124], "size": [0.35, 0.35, 0.35], "color": "#FBF6EC", "rot": [45, 84.2704, 0], "paint": true},
+      {"shape": "cube", "at": [0.806, 1.6, 0.8267], "size": [0.35, 0.35, 0.35], "color": "#FBF6EC", "rot": [45, 48.2704, 0], "paint": true},
+      {"shape": "cube", "at": [0.2295, 1.6, 1.2136], "size": [0.35, 0.35, 0.35], "color": "#FBF6EC", "rot": [45, 12.2704, 0], "paint": true},
+      {"shape": "cube", "at": [-0.4346, 1.6, 1.137], "size": [0.35, 0.35, 0.35], "color": "#FBF6EC", "rot": [45, -23.7296, 0], "paint": true},
+      {"shape": "cube", "at": [-0.9327, 1.6, 0.6261], "size": [0.35, 0.35, 0.35], "color": "#FBF6EC", "rot": [45, -59.7296, 0], "paint": true},
+      {"shape": "cube", "at": [-1.0746, 1.6, -0.124], "size": [0.35, 0.35, 0.35], "color": "#FBF6EC", "rot": [45, -95.7296, 0], "paint": true},
+      {"shape": "cube", "at": [-0.806, 1.6, -0.8267], "size": [0.35, 0.35, 0.35], "color": "#FBF6EC", "rot": [45, -131.7296, 0], "paint": true},
+      {"shape": "cube", "at": [-0.2295, 1.6, -1.2136], "size": [0.35, 0.35, 0.35], "color": "#FBF6EC", "rot": [45, -167.7296, 0], "paint": true},
+      {"shape": "cube", "at": [0.4346, 1.6, -1.137], "size": [0.35, 0.35, 0.35], "color": "#FBF6EC", "rot": [45, 156.2704, 0], "paint": true},
+      {"shape": "cube", "at": [0.9327, 1.6, -0.6261], "size": [0.35, 0.35, 0.35], "color": "#FBF6EC", "rot": [45, 120.2704, 0], "paint": true},
+      {"shape": "sphere", "at": [0, 0.3, 0], "size": [1.55, 1.4, 1.5], "color": "#FFDD3C", "node": "chick"},
+      {"shape": "sphere", "at": [0.75, 0.3, -0.05], "size": [0.2, 0.55, 0.6], "color": "#F2C230", "rot": [0, 0, -20], "node": "chick", "mirror": true},
+      {"shape": "sphere", "at": [0.28, 0.5, 0.62], "size": [0.24, 0.24, 0.24], "color": "#FFFFFF", "node": "chick", "mirror": true},
+      {"shape": "sphere", "at": [0.3, 0.52, 0.72], "size": [0.12, 0.12, 0.12], "color": "#141419", "node": "chick", "outline": false, "mirror": true},
+      {"shape": "cube", "at": [0, 0.25, 0.78], "size": [0.25, 0.25, 0.25], "color": "#FF9F1C", "rot": [45, 0, 45], "node": "chick"},
+      {"shape": "sphere", "at": [0.45, 0.2, 0.55], "size": [0.2, 0.1, 0.08], "color": "#FFB3C6", "rot": [0, 35, 0], "node": "chick", "outline": false, "mirror": true},
+      {"shape": "capsule", "at": [0, 1.05, 0], "size": [0.1, 0.15, 0.1], "color": "#FFDD3C", "rot": [0, 0, 20], "node": "chick", "outline": false},
+      {"shape": "capsule", "at": [0.08, 1.05, -0.05], "size": [0.08, 0.13, 0.08], "color": "#FFDD3C", "rot": [15, 0, -25], "node": "chick", "outline": false},
+      {"shape": "sphere", "at": [0, 0, 0], "size": [1.2, 0.45, 1.2], "color": "#FBF6EC", "rot": [-25, 0, 20], "node": "cap", "paint": true}
+    ],
+    "anim": [
+      {"node": "chick", "pos": [0, 0.12, 0], "freq": 3, "wave": "up"},
+      {"node": "chick", "rot": [0, 0, 6], "freq": 1.5},
+      {"node": "cap", "pos": [0, 0.12, 0], "freq": 3, "wave": "up"},
+      {"node": "cap", "rot": [0, 0, 10], "freq": 1.5}
+    ],
+    "hat": {"node": "chick", "at": [0, 1, -0.05], "scale": 0.42}
+   },
+   {
+    "id": "basket",
+    "name": "Easter Basket",
+    "nodes": [
+      {"name": "eggs", "at": [0, 1.45, 0]}
+    ],
+    "parts": [
+      {"shape": "wheel", "at": [1.1, 0.1, -1.2], "radius": 0.3, "width": 0.14, "color": "#B3803F", "hub": "#FFE38A", "mirror": true},
+      {"shape": "wheel", "at": [1.1, 0.1, 1.2], "radius": 0.3, "width": 0.14, "color": "#B3803F", "hub": "#FFE38A", "mirror": true},
+      {"shape": "cylinder", "at": [0, 0.85, 0], "size": [2.6, 0.6, 3.2], "color": "#D9A35B", "paint": true},
+      {"shape": "cylinder", "at": [0, 0.5, 0], "size": [2.64, 0.04, 3.24], "color": "#B3803F", "outline": false},
+      {"shape": "cylinder", "at": [0, 0.85, 0], "size": [2.64, 0.04, 3.24], "color": "#B3803F", "outline": false},
+      {"shape": "cylinder", "at": [0, 1.2, 0], "size": [2.64, 0.04, 3.24], "color": "#B3803F", "outline": false},
+      {"shape": "cylinder", "at": [0, 1.45, 0], "size": [2.3, 0.06, 2.9], "color": "#8EDB6A", "outline": false},
+      {"shape": "cube", "at": [1.25, 2.4, 0], "size": [0.15, 0.15, 0.15], "color": "#D9A35B", "outline": false},
+      {"shape": "capsule", "at": [1.25, 1.95, 0], "size": [0.18, 0.55, 0.18], "color": "#B3803F", "mirror": true},
+      {"shape": "capsule", "at": [0, 2.6, 0], "size": [0.18, 1.3, 0.18], "color": "#B3803F", "rot": [0, 0, 90]},
+      {"shape": "sphere", "at": [0.6, 0.2, 0.8], "size": [0.55, 0.75, 0.55], "color": "#FFB3C6", "rot": [-15, 0, -20], "node": "eggs"},
+      {"shape": "sphere", "at": [-0.55, 0.22, 0.6], "size": [0.55, 0.75, 0.55], "color": "#A8E6CF", "rot": [0, 0, 20], "node": "eggs"},
+      {"shape": "sphere", "at": [0.1, 0.25, -0.1], "size": [0.55, 0.75, 0.55], "color": "#FFE38A", "rot": [15, 0, -20], "node": "eggs"},
+      {"shape": "sphere", "at": [0.7, 0.2, -0.75], "size": [0.55, 0.75, 0.55], "color": "#B5C8FF", "rot": [-15, 0, 20], "node": "eggs"},
+      {"shape": "sphere", "at": [-0.6, 0.2, -0.8], "size": [0.55, 0.75, 0.55], "color": "#E0B5FF", "rot": [0, 0, -20], "node": "eggs"},
+      {"shape": "sphere", "at": [-0.1, 0.22, 1.1], "size": [0.55, 0.75, 0.55], "color": "#FFB3C6", "rot": [15, 0, 20], "node": "eggs"},
+      {"shape": "sphere", "at": [0, 0.2, -1.15], "size": [0.55, 0.75, 0.55], "color": "#A8E6CF", "rot": [-15, 0, -20], "node": "eggs"}
+    ],
+    "anim": [
+      {"node": "eggs", "pos": [0, 0.08, 0], "freq": 12, "wave": "up", "when": "moving"},
+      {"node": "eggs", "rot": [0, 0, 2], "freq": 1.5}
+    ],
+    "hat": {"node": "eggs", "at": [0, 0.65, 0], "scale": 0.45}
+   },
+   {
+    "id": "carrot",
+    "name": "Carrot Rocket",
+    "nodes": [
+      {"name": "rocket", "at": [0, 1.2, 0]},
+      {"name": "leaves", "at": [0, 0, -1.9], "parent": "rocket"},
+      {"name": "flame", "at": [0, -0.2, -2], "parent": "rocket"}
+    ],
+    "parts": [
+      {"shape": "capsule", "at": [0, 0, 0], "size": [1.3, 1.9, 1.3], "color": "#FF8A2B", "rot": [90, 0, 0], "node": "rocket", "paint": true},
+      {"shape": "capsule", "at": [0, 0, 1.6], "size": [0.75, 0.6, 0.75], "color": "#FF8A2B", "rot": [90, 0, 0], "node": "rocket", "paint": true},
+      {"shape": "cylinder", "at": [0, 0, -0.9], "size": [1.32, 0.02, 1.32], "color": "#E0731A", "rot": [90, 0, 0], "node": "rocket", "outline": false},
+      {"shape": "cylinder", "at": [0, 0, -0.3], "size": [1.32, 0.02, 1.32], "color": "#E0731A", "rot": [90, 0, 0], "node": "rocket", "outline": false},
+      {"shape": "cylinder", "at": [0, 0, 0.3], "size": [1.32, 0.02, 1.32], "color": "#E0731A", "rot": [90, 0, 0], "node": "rocket", "outline": false},
+      {"shape": "cylinder", "at": [0, 0, 0.9], "size": [1.32, 0.02, 1.32], "color": "#E0731A", "rot": [90, 0, 0], "node": "rocket", "outline": false},
+      {"shape": "cube", "at": [0, 0.7, -1.45], "size": [0.1, 0.6, 0.8], "color": "#5CB84D", "rot": [0, 0, 0], "node": "rocket"},
+      {"shape": "cube", "at": [-0.6062, -0.35, -1.45], "size": [0.1, 0.6, 0.8], "color": "#5CB84D", "rot": [0, 0, -120], "node": "rocket"},
+      {"shape": "cube", "at": [0.6062, -0.35, -1.45], "size": [0.1, 0.6, 0.8], "color": "#5CB84D", "rot": [0, 0, 120], "node": "rocket"},
+      {"shape": "capsule", "at": [0, 0.4, -0.2], "size": [0.2, 0.45, 0.2], "color": "#5CB84D", "rot": [-60, 0, 0], "node": "leaves"},
+      {"shape": "capsule", "at": [0, 0.4, -0.2], "size": [0.2, 0.45, 0.2], "color": "#5CB84D", "rot": [-60, 90, 0], "node": "leaves"},
+      {"shape": "capsule", "at": [0, 0.4, -0.2], "size": [0.2, 0.45, 0.2], "color": "#5CB84D", "rot": [-60, 180, 0], "node": "leaves"},
+      {"shape": "capsule", "at": [0, 0.4, -0.2], "size": [0.2, 0.45, 0.2], "color": "#5CB84D", "rot": [-60, 270, 0], "node": "leaves"},
+      {"shape": "cube", "at": [0, 0.62, 0.3], "size": [0.7, 0.1, 0.9], "color": "#BFE6FF", "rot": [-12, 0, 0], "node": "rocket"},
+      {"shape": "sphere", "at": [0.25, 0.25, 1.95], "size": [0.22, 0.22, 0.22], "color": "#FFFFFF", "node": "rocket", "mirror": true},
+      {"shape": "sphere", "at": [0.27, 0.27, 2.05], "size": [0.1, 0.1, 0.1], "color": "#141419", "node": "rocket", "outline": false, "mirror": true},
+      {"shape": "sphere", "at": [0, 0, -0.3], "size": [0.5, 0.5, 0.8], "color": "#FFD23F", "node": "flame", "outline": false},
+      {"shape": "sphere", "at": [0, 0, -0.1], "size": [0.3, 0.3, 0.5], "color": "#FFFFFF", "node": "flame", "outline": false}
+    ],
+    "anim": [
+      {"node": "rocket", "pos": [0, 0.12, 0], "freq": 2.2},
+      {"node": "rocket", "rot": [0, 0, 3], "freq": 1.6},
+      {"node": "leaves", "rot": [0, 0, 90], "wave": "spin"},
+      {"node": "flame", "pos": [0, 0, -0.15], "freq": 20}
+    ],
+    "hat": {"node": "rocket", "at": [0, 0.68, 0], "scale": 0.45}
+   }
+  ]
+}
