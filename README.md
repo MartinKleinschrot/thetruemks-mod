@@ -2,7 +2,7 @@
 
 A BepInEx mod for **You Suck at Parking**:
 
-- **Private match lobby** (F7 / "Options"): the host can turn on a map vote (everyone votes for the next map before each round), pick the levels by hand and share custom levels with everyone in the lobby. Without either, the match plays the selected biomes as usual. Players rate maps after playing them and see how often each map was played.
+- **Private match lobby** (F7 / "Options"): the host can turn on a map vote (everyone votes for the next map before each round), pick the levels by hand and share custom levels with everyone in the lobby. Without either, the match plays the selected biomes as usual. After each round everyone rates the map with D-pad up or down (👍 / 😭), and each player's rating pops up next to their name in the results. The vote cards show who made each map, how often you've played it and its 👍 / 😭 counts.
 - **Change your car in the private lobby** (F6 / "Car"): every car you own plus the mod cars, without going back to the garage. Everyone in the lobby sees the new car.
 - **Invite Steam friends** (F8 in the private lobby): opens Steam's invite dialog. Your friend accepts the invite in Steam and lands in your lobby, no lobby code needed.
 - **Level Editor** (main menu button, RT/R2 or F8): create levels or edit copies of official ones, then play or test them alone.
@@ -16,7 +16,7 @@ A BepInEx mod for **You Suck at Parking**:
 
   With the map vote on, a few maps of the selected biomes that all players have (TheTrueMK's maps, or levels the host shared) join the vote: one or two of the vote cards are custom maps. The host can turn that off in the options.
 - **Garage overview** (C in the garage): every car at once in two tabs, GAME CARS and MOD CARS, with NEW tags for cars you just got.
-- **Mod cars**: 55 fun looks for your car (a dino on rollerblades, a rubber duck in a bathtub, a haunted coffin, Santa's sleigh, ...) in themes: Classic, Halloween, Christmas, Easter, Summer, Food, Animals, Space, Monsters and Sports. You start with the dino. **Every multiplayer match you finish unlocks a new one at random.** Every car can drop all year, but a seasonal theme's cars are 4x more likely in their season (Halloween 1 Oct - 7 Nov, Christmas 1 Dec - 6 Jan, Easter 15 Mar - 30 Apr, Summer Jun - Aug). Pick yours in the garage or the private lobby under the MOD CARS tab. Other players with the mod see your mod car, and players without it see your normal car. New themes arrive through this repository without a mod update.
+- **Mod cars**: 55 fun looks for your car (a dino on rollerblades, a rubber duck in a bathtub, a haunted coffin, Santa's sleigh, ...) in themes: Classic, Halloween, Christmas, Easter, Summer, Food, Animals, Space, Monsters and Sports. You start with the dino. **Every multiplayer match you finish unlocks a new one at random.** Every car can drop all year, but a seasonal theme's cars are 4x more likely in their season (Halloween 1 Oct - 7 Nov, Christmas 1 Dec - 6 Jan, Easter 15 Mar - 30 Apr, Summer Jun - Aug). When you win one, "Equip now" (Y on the controller, E on the keyboard) puts it on right away; otherwise pick it in the garage or the private lobby under the MOD CARS tab. Other players with the mod see your mod car, and players without it see your normal car. New themes arrive through this repository without a mod update.
 
 Every player in a lobby needs the mod (except for joining through a Steam invite, which works without it).
 
@@ -60,3 +60,7 @@ Mod cars are JSON files made of simple shapes. Put yours in `BepInEx/config/thet
   - `when`: `always`, `moving` or `idle`.
 
 The built-in cars are in [`cars/`](cars) and are good examples.
+
+## Credits
+
+Rating emoji: [Twemoji](https://github.com/jdecked/twemoji) by Twitter, Inc. and other contributors, licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
