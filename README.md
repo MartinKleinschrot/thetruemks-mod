@@ -2,7 +2,7 @@
 
 A BepInEx mod for **You Suck at Parking**:
 
-- **Private match lobby** (F7 / "Options"): the host can turn on a map vote (everyone votes for the next map before each round), pick the levels by hand and share custom levels with everyone in the lobby. Without either, the match plays the selected biomes as usual. After each round everyone rates the map with D-pad up or down (👍 / 😭), and each player's rating pops up next to their name in the results. The vote cards show who made each map, how often you've played it and its 👍 / 😭 counts.
+- **Private match lobby** (F7 / "Options"): the host can turn on a map vote (everyone votes for the next map before each round), pick the levels by hand and share custom levels with everyone in the lobby. Without either, the match plays the selected biomes as usual. After each round everyone rates the map with D-pad up or down (👍 / 😭), once per map, and each player's rating pops up next to their name in the results. The vote cards show who made each map, how often you've played it and its 👍 / 😭 counts.
 - **Change your car in the private lobby** (F6 / "Car"): every car you own plus the mod cars, without going back to the garage. Everyone in the lobby sees the new car.
 - **Invite Steam friends** (F8 in the private lobby): a list of your Steam friends (who's playing You Suck at Parking first). Tick as many as you like and invite them all with one click, or invite everyone who's playing right now. They accept in Steam and land in your lobby, no lobby code needed. Steam's own invite dialog is still there as a button.
 - **Level Editor** (main menu button, RT/R2 or F8): create levels or edit copies of official ones, then play or test them alone.
