@@ -2,7 +2,8 @@
 
 A BepInEx mod for **You Suck at Parking**:
 
-- **Private match lobby** (F7 / "Lobby options"): everyone votes for the next map before each round, rates maps after playing them and sees how often each map was played. The host can also pick the levels by hand and share custom levels with everyone in the lobby.
+- **Private match lobby** (F7 / "Options"): the host can turn on a map vote (everyone votes for the next map before each round), pick the levels by hand and share custom levels with everyone in the lobby. Without either, the match plays the selected biomes as usual. Players rate maps after playing them and see how often each map was played.
+- **Change your car in the private lobby** (F6 / "Car"): every car you own plus the mod cars, without going back to the garage. Everyone in the lobby sees the new car.
 - **Invite Steam friends** (F8 in the private lobby): opens Steam's invite dialog. Your friend accepts the invite in Steam and lands in your lobby, no lobby code needed.
 - **Level Editor** (main menu button, RT/R2 or F8): create levels or edit copies of official ones, then play or test them alone.
 - **TheTrueMK's maps**: tricky custom levels that install themselves and update automatically. They're in "My levels" and can be shared in a private lobby like your own:
@@ -13,9 +14,9 @@ A BepInEx mod for **You Suck at Parking**:
   - *Hidden Alleys*: a forest town full of dead-end alleys. Only three hide a parking spot.
   - **130 arenas** (*Tiny Overpass*, *Chaotic Overpass*, *Crazy Alley*, *Dizzy Yard*, ...): small multi-level arenas built for chaos. 8 to 10 parking spots are packed close together on plazas stacked up to three levels high, with ramps, bridges and lots of jumps over the sea (hit the jump pad at full speed!). Some spots hide under the upper decks or behind trees.
 
-  In a private lobby, every map that all players have (TheTrueMK's maps, or levels the host shared) joins the map vote: one or two of the vote cards are custom maps.
-- **Garage overview** (C in the garage): every car at once, with NEW tags for cars you just got.
-- **Mod cars**: 55 fun looks for your car (a dino on rollerblades, a rubber duck in a bathtub, a haunted coffin, Santa's sleigh, ...) in themes: Classic, Halloween, Christmas, Easter, Summer, Food, Animals, Space, Monsters and Sports. You start with the dino. **Every multiplayer match you finish unlocks a new one at random.** Every car can drop all year, but a seasonal theme's cars are 4x more likely in their season (Halloween 1 Oct - 7 Nov, Christmas 1 Dec - 6 Jan, Easter 15 Mar - 30 Apr, Summer Jun - Aug). Pick yours in the garage under MOD CARS. Other players with the mod see your mod car, and players without it see your normal car. New themes arrive through this repository without a mod update.
+  With the map vote on, a few maps of the selected biomes that all players have (TheTrueMK's maps, or levels the host shared) join the vote: one or two of the vote cards are custom maps. The host can turn that off in the options.
+- **Garage overview** (C in the garage): every car at once in two tabs, GAME CARS and MOD CARS, with NEW tags for cars you just got.
+- **Mod cars**: 55 fun looks for your car (a dino on rollerblades, a rubber duck in a bathtub, a haunted coffin, Santa's sleigh, ...) in themes: Classic, Halloween, Christmas, Easter, Summer, Food, Animals, Space, Monsters and Sports. You start with the dino. **Every multiplayer match you finish unlocks a new one at random.** Every car can drop all year, but a seasonal theme's cars are 4x more likely in their season (Halloween 1 Oct - 7 Nov, Christmas 1 Dec - 6 Jan, Easter 15 Mar - 30 Apr, Summer Jun - Aug). Pick yours in the garage or the private lobby under the MOD CARS tab. Other players with the mod see your mod car, and players without it see your normal car. New themes arrive through this repository without a mod update.
 
 Every player in a lobby needs the mod (except for joining through a Steam invite, which works without it).
 
